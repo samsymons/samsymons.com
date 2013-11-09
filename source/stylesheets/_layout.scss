@@ -1,0 +1,277 @@
+/* General Layout: */
+
+html {
+  background-color: $background-color;
+
+  font-size: 18px;
+
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+.content {
+  @include outer-container;
+
+  padding: 0px 20px;
+}
+
+/* Header: */
+
+#main-header {
+  margin-bottom: 35px;
+  padding: 14px 0px;
+
+  background-color: white;
+  border-bottom: 1px solid #F2F2F2;
+
+  a {
+    color: $light-text-color;
+    font-size: 16px;
+
+    @include transition(color 0.25s);
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+
+  @include clearfix;
+}
+
+#main-title {
+  margin: 0px;
+  font-weight: normal;
+
+
+  a {
+    display: inline-block;
+    float: left;
+    line-height: 25px;
+
+    padding-top: 1px;
+    box-sizing: border-box;
+  }
+
+  @include media($mobile) {
+    @include clearfix();
+
+    margin-bottom: 10px;
+
+    a {
+      display: block !important;
+      text-align: center;
+      float: none !important;
+    }
+  }
+}
+
+#main-navigation ul {
+  padding: 0px;
+  float: right;
+
+  li {
+    margin-right: 18px;
+    margin-bottom: 0px;
+
+    display: inline-block;
+    text-align: center;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  @include media($mobile) {
+    @include clearfix();
+
+    text-align: center;
+    float: none;
+  }
+}
+
+#site-links {
+  margin: 0px;
+  line-height: 25px;
+}
+
+/* Articles: */
+
+article {
+  @include clearfix;
+  margin-bottom: 50px;
+}
+
+article:last-child {
+  margin-bottom: 0px;
+}
+
+.title {
+  margin-top: 0px;
+  margin-bottom: 17px;
+}
+
+.metadata {
+  @include span-columns(6);
+
+  margin-top: 10px;
+  padding-top: 5px;
+
+  border-top: 1px solid #E1E1E1;
+}
+
+.pagination {
+  @include clearfix;
+
+  display: block;
+  margin-top: 30px;
+
+  .next-page {
+    float: left;
+  }
+
+  .previous-page {
+    float: right;
+  }
+}
+
+/* Archive: */
+
+.year, .month {
+  margin-left: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.year {
+  margin-top: 0px;
+
+  li {
+    margin-bottom: 40px;
+  }
+}
+
+.year-header {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+
+  border-bottom: 1px solid #eee;
+
+  line-height: 25px;
+}
+
+.month {
+  margin-bottom: 25px;
+}
+
+.month li {
+  margin-bottom: 8px;
+}
+
+.month h3 {
+  margin-top: 0px;
+  margin-bottom: 7px;
+}
+
+/* Projects */
+
+#projects {
+  margin-top: 0px;
+
+  list-style: none;
+  padding: 0px;
+}
+
+.project {
+  border-bottom: 1px solid #eee;
+  padding: 30px 0px 34px 0px;
+
+  @include media($mobile) {
+    text-align: center;
+  }
+
+  .blue-button {
+    margin-right: 15px;
+  }
+
+  .blue-button:last-child {
+    margin-right: 0px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  &:first-child {
+    padding-top: 0px;
+  }
+
+  h2 {
+    margin-top: 0px;
+    line-height: 26px;
+
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.blue-button {
+  display: inline-block;
+  padding: 7px 0px 6px 0px;
+
+  border-radius: 5px;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+
+  text-align: center;
+  text-shadow: 0px -1px 1px #002170;
+
+  width: 105px;
+
+  background-image: -o-linear-gradient(-90deg, #84CBFF 0%, #3699F2 44%, #0573EA 100%);
+  background-image: -moz-linear-gradient(-90deg, #84CBFF 0%, #3699F2 44%, #0573EA 100%);
+  background-image: -webkit-linear-gradient(-90deg, #84CBFF 0%, #3699F2 44%, #0573EA 100%);
+  background-image: -ms-linear-gradient(-90deg, #84CBFF 0%, #3699F2 44%, #0573EA 100%);
+  background-image: linear-gradient(-180deg, #84CBFF 0%, #3699F2 44%, #0573EA 100%);
+
+  border: 1px solid #0055C7;
+
+  -moz-box-shadow:    0px 1px 2px 0px #589BF2, inset 0px 1px 1px 0px #A8D8FF;
+  -webkit-box-shadow: 0px 1px 2px 0px #589BF2, inset 0px 1px 1px 0px #A8D8FF;
+  box-shadow:         0px 1px 2px 0px #589BF2, inset 0px 1px 1px 0px #A8D8FF;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.buttons {
+  padding: 0px;
+  list-style: none;
+  
+  li {
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  @include media($mobile) {
+    margin-left: 10px;
+    text-align: center;
+  }
+}
+
+/* Footer: */
+
+footer {
+  margin-top: 45px;
+}
+

@@ -1,0 +1,23 @@
+---
+pageable: true
+---
+
+<div id="articles">
+  <% page_articles.each_with_index do |current_article, i| %>
+    <%= partial('/layouts/partials/article', :locals => { :article => current_article }) %>
+  <% end %>
+</div>
+
+<% if next_page or prev_page %>
+  <span class="pagination">
+    <% if paginate %>
+      <% if next_page %>
+        <%= link_to "&larr; Next Page", next_page.url, class: 'next-page' %>
+      <% end %>
+
+      <% if prev_page %>
+        <%= link_to "Previous Page &rarr;", prev_page.url, class: 'previous-page' %>
+      <% end %>
+    <% end %>
+  </span>
+<% end %>

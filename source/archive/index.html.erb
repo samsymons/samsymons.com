@@ -1,0 +1,19 @@
+---
+title: Archive
+---
+
+<ul class="year">
+  <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+    <li>
+      <h2 class="year-header"><%= year %></h2>
+      <% articles.group_by {|a| a.date.strftime('%B') }.each do |month, articles| %>
+        <ul class="month">
+          <h3 class="month-header"><%= month %></h3>
+          <% articles.each do |article| %>
+            <li><a href="<%= article.url %>"><%= article.title %></a></li>
+          <% end %>
+        </ul>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

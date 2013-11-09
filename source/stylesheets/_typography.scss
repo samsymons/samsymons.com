@@ -1,0 +1,102 @@
+$sans-serif-font: "source-sans-pro", sans-serif;
+
+body {
+  font-family: $sans-serif-font;
+}
+
+p, li {
+  margin-top: 0px;
+
+  font-family: "ff-tisa-web-pro", serif;
+  font-size: 18px;
+
+  line-height: 30px;
+
+  @include media($mobile) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+#site-links li, #footer-details {
+  font-family: $sans-serif-font;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+article {
+  color: $text-color;
+
+  .metadata {
+    font-family: $sans-serif-font;
+  }
+
+  .title a {
+    color: $text-color;
+    border-bottom: none;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+  
+  @include media($mobile) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.blue-button {
+  font-family: $sans-serif-font;
+}
+
+h1, h2, h3 {
+  margin: 25px 0px 10px 0px;
+
+  font-family: $sans-serif-font;
+  font-weight: 600;
+}
+
+h1 {
+  margin-top: 0px;
+  font-size: 36px;
+
+  @include media($mobile) {
+    font-size: 30px;
+  }
+}
+
+p {
+  margin-top: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;;
+  border-bottom: 1px solid $link-color;
+}
+
+#main-header a {
+  border-bottom: none;
+}
+
+#main-header .active {
+  color: $text-color;
+}
+
+article a:hover {
+  border-bottom: 1px solid $link-hover-color;
+}
+
+.metadata, footer, footer a {
+  color: $light-text-color;
+  font-size: 15px;
+}
+
+footer a {
+  transition: color 0.25s linear;
+
+  &:hover {
+    color: $text-color;
+  }
+}
