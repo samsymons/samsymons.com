@@ -18,18 +18,15 @@ p, li {
   }
 }
 
-#site-links li, #footer-details {
+#site-links li {
   font-family: $sans-serif-font;
   font-size: 16px;
+
   line-height: 25px;
 }
 
 article {
   color: $text-color;
-
-  .metadata {
-    font-family: $sans-serif-font;
-  }
 
   .title a {
     color: $text-color;
@@ -43,6 +40,23 @@ article {
   @include media($mobile) {
     font-size: 16px;
     line-height: 28px;
+  }
+}
+
+.metadata, footer p, footer a {
+  color: $light-text-color;
+
+  font-family: $sans-serif-font;
+  font-size: 16px;
+
+  @include media($mobile) {
+    font-size: 15px;
+  }
+}
+
+footer {
+  @include media($mobile) {
+    text-align: center;
   }
 }
 
@@ -86,11 +100,6 @@ a {
 
 article a:hover {
   border-bottom: 1px solid $link-hover-color;
-}
-
-.metadata, footer, footer a {
-  color: $light-text-color;
-  font-size: 15px;
 }
 
 footer a {
