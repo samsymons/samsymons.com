@@ -1,6 +1,6 @@
 ---
 title: RedditKit 1.0
-date: 2013-11-08 12:00 UTC
+date: 2013-11-11 12:00 UTC
 ---
 
 reddit has always had a massive nerd audience. [/r/programming](http://reddit.com/r/programming) has a subscriber base of nearly half a million, and there are countless other subreddits dedicated to the art of software development.
