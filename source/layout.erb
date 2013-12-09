@@ -9,7 +9,9 @@
     <title><%= page_title %></title> 
 
     <%= stylesheet_link_tag 'normalize', 'all', 'syntax-highlighting' %>
+    <%= javascript_include_tag 'highlight.min' %>
 
+    <script>hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript" src="//use.typekit.net/moq7rrj.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 

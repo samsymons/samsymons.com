@@ -1,13 +1,24 @@
-.highlight { 
-    background-color: #FAFAFA;
-    border: 1px solid #E9E9E9;
+code {
+  display; inline-block;
 
-    box-sizing: border-box;
-    padding: 7px 12px;
-    border-radius: 5px;
+  background-color: #FAFAFA;
+  border: 1px solid #E9E9E9;
 
-    font-size: 14px;
-    line-height: 20px;
+  box-sizing: border-box;
+  padding: 4px 9px;
+  border-radius: 3px;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  white-space: nowrap;
+}
+
+pre code { 
+  display: block;
+  padding: 7px 12px;
+
+  white-space: normal;
 }
 
 .c { color: #999988; font-style: italic } /* Comment */
