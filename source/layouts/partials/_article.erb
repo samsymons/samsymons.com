@@ -1,6 +1,6 @@
 <article>
     <% if article.data.link %>
-        <h1 class="title"><%= link_to article.title, article.data.link %> &rarr;</h1> 
+        <h1 class="title link"><%= link_to article.title, article.data.link %> &rarr;</h1> 
     <% else %>
         <h1 class="title"><%= link_to article.title, article %></h1> 
     <% end %>

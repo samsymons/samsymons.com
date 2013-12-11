@@ -24,7 +24,7 @@ end
 
 helpers do
   def metadata_for_article(article)
-    "<time>Published #{article.date.strftime('%A, %B %e, %Y')}</time>"
+    "<time>Published #{article.date.strftime('%A, %B %e, %Y')}</time><span class='metadata-separator'>•</span><a class='permalink' title='Permalink' href='#{article.url}'>&infin;</a>"
   end
 
   def navigation_link_to(title, path)
