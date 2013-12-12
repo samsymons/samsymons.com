@@ -5,8 +5,6 @@
 # Time.zone = "UTC"
 
 activate :directory_indexes
-activate :livereload
-activate :syntax
 
 activate :blog do |blog|
   blog.layout = "article"
