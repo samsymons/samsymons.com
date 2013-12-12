@@ -15,6 +15,10 @@ activate :blog do |blog|
   blog.per_page = 5
 end
 
+activate :deploy do |deploy|
+  deploy.method = :git
+end
+
 activate :directory_indexes
 
 helpers do
