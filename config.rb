@@ -4,21 +4,18 @@
 
 # Time.zone = "UTC"
 
-activate :directory_indexes
-
 activate :blog do |blog|
   blog.layout = "article"
   blog.permalink = "blog/:title"
 
   blog.sources = "articles/:year-:month-:day-:title.html"
 
-  blog.taglink = "categories/:tag.html"
-  blog.tag_template = "tag.html"
-
   blog.paginate = true
   blog.page_link = "page/:num"
   blog.per_page = 5
 end
+
+activate :directory_indexes
 
 helpers do
   def metadata_for_article(article)
