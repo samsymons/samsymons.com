@@ -4,8 +4,8 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
 
   xml.title "Sam Symons"
   xml.id site_url
-  xml.link "href" => "http://samsymons.com/"
-  xml.link "href" => "http://samsymons.com/feed.xml", "rel" => "self"
+  xml.link "href" => site_url
+  xml.link "href" => "#{site_url}feed.xml", "rel" => "self"
   xml.updated blog.articles.first.date.to_time.iso8601
   xml.author { xml.name "Sam Symons" }
 
