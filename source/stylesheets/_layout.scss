@@ -136,6 +136,10 @@ article:last-child {
   }
 }
 
+.badged-header {
+  @include clearfix;
+}
+
 /* Archive: */
 
 .year, .month {

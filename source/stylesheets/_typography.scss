@@ -117,6 +117,21 @@ h1 {
   }
 }
 
+h2 {
+  @include clearfix;
+}
+
+/*
+  We have to tweak the H2 tags in order to get any badges to show correctly.
+  Without floating to the left and setting the width to 100%, badges will be misaligned vertically.
+*/
+.badged-header > h2 {
+  margin-top: 17px;
+
+  display: inline-block;
+  float: left;
+}
+
 p {
   margin-top: 0px;
 }
