@@ -142,6 +142,20 @@ a {
   border-bottom: 1px solid $link-color;
 }
 
+blockquote {
+  margin: 0px;
+  padding: 0px 10px;
+
+  border-left: 3px solid #eee;
+  color: $light-text-color;
+
+  font-style: italic;
+
+  a {
+    color: darken($light-text-color, 20%);
+  }
+}
+
 #main-header a {
   border-bottom: none;
 }
