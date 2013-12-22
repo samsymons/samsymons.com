@@ -1,6 +1,7 @@
 ---
 title: Building a Task Manager with Sinatra and Backbone.js, Part 1
 date: 2013-12-20 20:47 UTC
+wip: true
 ---
 
 There's no better way to learn than by getting your hands dirty, so with that in mind, we're going to create a task manager from the ground up with Sinatra and Backbone.js, along with a host of other useful projects.

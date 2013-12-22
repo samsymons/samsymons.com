@@ -1,9 +1,3 @@
-###
-# Blog settings
-###
-
-# Time.zone = "UTC"
-
 activate :blog do |blog|
   blog.layout = "article"
   blog.permalink = "blog/:title"
@@ -37,7 +31,7 @@ helpers do
 end
 
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true
+set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 page "/feed.xml", :layout => false
 
@@ -47,7 +41,7 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
-configure :build do
-  require "middleman-smusher"
-  activate :smusher
-end
+# configure :build do
+#   require "middleman-smusher"
+#   activate :smusher
+# end

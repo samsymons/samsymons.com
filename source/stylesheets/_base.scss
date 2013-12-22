@@ -1,6 +1,4 @@
 .badge {
-  float: left;
-
   padding: 2px 6px;
 
   background-color: #ddd;
@@ -13,6 +11,8 @@
 }
 
 .badged-header > .badge {
+  float: left;
+
   margin-top: 26px;
   margin-left: 10px;
 
@@ -24,4 +24,13 @@
 .blue {
   background-color: #0079F3;
   color: white;
+}
+
+.red {
+  background-color: #FF3939;
+  color: white;
+}
+
+.archive-badge {
+  margin-left: 5px;
 }

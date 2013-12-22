@@ -1,6 +1,7 @@
 ---
 title: IRC With WeeChat
 date: 2013-12-18 15:00 UTC
+wip: true
 ---
 
 My relationship with IRC clients on OS X has been a long and fairly unsuccessful one. For whatever reason, I've never been able to find one that really stuck. Those I have tried each have their own issues and quirks that are difficult to get past.

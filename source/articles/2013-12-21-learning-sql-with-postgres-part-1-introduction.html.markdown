@@ -1,6 +1,7 @@
 ---
 title: "Learning SQL with Postgres, Part 1: Introduction"
 date: 2013-12-21 03:45 UTC
+wip: true
 ---
 
 It's not good enough to simply be familiar with ORMs like Rails' Active Record; you should be able to understand and write queries in [SQL](http://en.wikipedia.org/wiki/SQL), at least at a basic level.

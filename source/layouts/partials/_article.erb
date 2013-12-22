@@ -1,13 +1,13 @@
 <article>
-    <% if article.data.link %>
-        <h1 class="title link"><%= link_to article.title, article.data.link %> &rarr;</h1> 
-    <% else %>
-        <h1 class="title"><%= link_to article.title, article %></h1> 
-    <% end %>
+  <% if article.data.link %>
+    <h1 class="title link"><%= link_to article.title, article.data.link %> &rarr;</h1> 
+  <% else %>
+    <h1 class="title"><%= link_to article.title, article %></h1> 
+  <% end %>
 
-    <%= article.body %>
+  <%= article.body %>
 
-    <span class="metadata">
-        <%= metadata_for_article(article) %>
-    </span>
+  <span class="metadata">
+    <%= metadata_for_article(article) %>
+  </span>
 </article>

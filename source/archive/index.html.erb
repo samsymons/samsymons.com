@@ -10,7 +10,17 @@ title: Archive
         <ul class="month">
           <h3 class="month-header"><%= month %></h3>
           <% articles.each do |article| %>
-            <li><a href="<%= article.url %>"><%= article.title %></a></li>
+            <li>
+              <% if article.data.link %>
+                <a href="<%= article.url %>"><%= article.title %></a> &rarr;
+              <% else %>
+                <a href="<%= article.url %>"><%= article.title %></a>
+              <% end %>
+
+              <% if article.data.wip %>
+                <span class="badge blue archive-badge">WIP</span>
+              <% end %>
+            </li>
           <% end %>
         </ul>
       <% end %>
