@@ -27,19 +27,19 @@ The [course on cryptography](https://www.coursera.org/course/crypto) is really w
 
 ### MIT OpenCourseware
 
-MIT's assortment of courses, which number in the thousands, is impressive. Rather than being courses specifically designed for online education, they are recordings and notes from MIT's actual lectures.
+[MIT's assortment of courses](http://ocw.mit.edu/), which number in the thousands, is impressive. Rather than being courses specifically designed for online education, they are recordings and notes from MIT's actual lectures.
 
 Check out their list of [most popular courses](http://ocw.mit.edu/courses/most-visited-courses/).
 
 ### Khan Academy
 
-Perhaps the most well known site on the list, Khan Academy focuses on mathematics from basic arithmetic all the way up to calculus and linear algebra, but has videos on topics like physics and chemistry.
+Perhaps the most well known site on the list, [Khan Academy](http://www.khanacademy.org) focuses on mathematics from basic arithmetic all the way up to calculus and linear algebra, but has videos on topics like physics and chemistry.
 
 Khan Academy is my favorite here. Sal is an astounding teacher, and the exercises are nicely done. The [TED talk he gave on Khan Academy](http://www.ted.com/talks/salman_khan_let_s_use_video_to_reinvent_education.html) is worth watching.
 
 ### EdX
 
-EdX is another aggregator of complete courses from existing universities, created by Harvard and MIT. Their courses, and the site itself, are impressive.
+[EdX](https://www.edx.org/) is another aggregator of complete courses from existing universities, created by Harvard and MIT. Their courses, and the site itself, are impressive.
 
 EdX has a [demo course](https://www.edx.org/course/edx/edx-edxdemo101-edx-demo-1038) for new students to try out. After that, perhaps try [Harvard's CS50 course](https://www.edx.org/course/harvardx/harvardx-cs50x-introduction-computer-1022) to refresh your knowledge of data structures and algorithms.
 
