@@ -6,5 +6,3 @@ link: https://github.com/blog/1672-introducing-github-traffic-analytics
 
 GitHub now has built-in traffic analytics. Gone are the days of having to include an ugly workaround just to see how many people are visiting your projects.
 
-Check it out in action [on the RedditKit repo](https://github.com/samsymons/RedditKit/graphs/traffic).
-
