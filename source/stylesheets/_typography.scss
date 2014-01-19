@@ -28,11 +28,11 @@ p, li {
 article {
   color: $text-color;
 
-  .title {
+  .article-title {
     display: inline-block;
   }
 
-  .title a {
+  .article-title a {
     color: $text-color;
     border-bottom: none;
 
