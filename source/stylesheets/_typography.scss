@@ -47,14 +47,6 @@ article {
   .link {
     color: $light-text-color;
 
-    a {
-      border-bottom: 1px solid $link-color;
-
-      &:hover {
-        border-bottom: 1px solid $link-hover-color;
-      }
-    }
-
     @include media($mobile) {
       padding-bottom: 5px;
     }
@@ -139,8 +131,9 @@ p {
 
 a {
   text-decoration: none;
-  color: $text-color;;
-  border-bottom: 1px solid $link-color;
+  color: $text-color;
+
+  border-bottom: 1px dotted $link-color;
 }
 
 blockquote {
@@ -166,7 +159,7 @@ blockquote {
 }
 
 article a:hover {
-  border-bottom: 1px solid $link-hover-color;
+  border-bottom: 1px dotted $link-hover-color;
 }
 
 footer a {
