@@ -23,8 +23,8 @@ html {
   margin-bottom: 35px;
   padding: 14px 0px;
 
-  background-color: white;
-  border-bottom: 1px solid #F2F2F2;
+  background-color: $background-color;
+  border-bottom: 1px solid $border-color;
 
   a {
     color: $light-text-color;
@@ -249,9 +249,9 @@ article:last-child {
 
   border: 1px solid #0055C7;
 
-  -moz-box-shadow:    0px 1px 2px 0px #589BF2, inset 0px 1px 1px 0px #A8D8FF;
+  -moz-box-shadow: 0px 1px 2px 0px #589BF2, inset 0px 1px 1px 0px #A8D8FF;
   -webkit-box-shadow: 0px 1px 2px 0px #589BF2, inset 0px 1px 1px 0px #A8D8FF;
-  box-shadow:         0px 1px 2px 0px #589BF2, inset 0px 1px 1px 0px #A8D8FF;
+  box-shadow: 0px 1px 2px 0px #589BF2, inset 0px 1px 1px 0px #A8D8FF;
 
   &:hover {
     color: white;
@@ -261,7 +261,7 @@ article:last-child {
 .buttons {
   padding: 0px;
   list-style: none;
-  
+
   li {
     margin-right: 10px;
     display: inline-block;
