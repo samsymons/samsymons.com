@@ -33,7 +33,7 @@ html {
     @include transition(color 0.25s);
 
     &:hover {
-      color: $text-color;
+      color: $link-hover-color;
     }
   }
 

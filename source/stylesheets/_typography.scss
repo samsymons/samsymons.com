@@ -1,4 +1,6 @@
 $sans-serif-font: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$article-sans-serif-font: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-font: "minion-pro", serif;
 
 body {
   font-family: $sans-serif-font;
@@ -7,13 +9,13 @@ body {
 p, li {
   margin-top: 0px;
 
-  font-family: $sans-serif-font;
-  font-size: 18px;
+  font-family: $serif-font;
+  font-size: 20px;
 
   line-height: 30px;
 
   @include media($mobile) {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px;
   }
 }
@@ -28,8 +30,17 @@ p, li {
 article {
   color: $text-color;
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $article-sans-serif-font;
+
+    @include media($mobile) {
+      font-size: 20px;
+    }
+  }
+
   .article-title {
     display: inline-block;
+
     font-size: 24px;
   }
 
@@ -104,10 +115,6 @@ h1, h2, h3 {
 h1 {
   margin-top: 0px;
   font-size: 36px;
-
-  @include media($mobile) {
-    font-size: 30px;
-  }
 }
 
 h2 {
@@ -133,7 +140,7 @@ a {
   text-decoration: none;
   color: $text-color;
 
-  border-bottom: 1px dotted $link-color;
+  border-bottom: 1px solid $link-color;
 }
 
 blockquote {
@@ -156,10 +163,6 @@ blockquote {
 
 #main-header .active {
   color: $text-color;
-}
-
-article a:hover {
-  border-bottom: 1px dotted $link-hover-color;
 }
 
 footer a {
