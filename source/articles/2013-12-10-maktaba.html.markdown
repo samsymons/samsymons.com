@@ -1,9 +1,0 @@
----
-title: Maktaba
-date: 2013-12-10 10:00 UTC
-link: https://github.com/google/maktaba
----
-
-Google's new library for building Vim plugins looks fantastic. Check out the [test files](https://github.com/google/maktaba/tree/master/vroom) for quality examples of its features and Vimscript itself.
-
-On a similar note, the free [Learn Vimscript the Hard Way](http://learnvimscriptthehardway.stevelosh.com) ebook is great for those looking to get started with Vim plugin authoring.

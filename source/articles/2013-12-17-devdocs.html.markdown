@@ -1,8 +1,0 @@
----
-title: DevDocs
-date: 2013-12-17 18:32 UTC
-link: http://devdocs.io
----
-
-Easily the best web-based documentation browser I've seen. Fast, nicely designed, and [completely open source](https://github.com/Thibaut/devdocs). Plus it looks great on a phone.
-
