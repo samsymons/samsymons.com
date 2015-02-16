@@ -25,7 +25,7 @@ helpers do
     if current_page.url == path
       link_to title, path, :class => 'active'
     else
-      link_to title, path 
+      link_to title, path
     end
   end
 end

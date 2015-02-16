@@ -20,6 +20,10 @@ p, li {
   }
 }
 
+code {
+  font-family: 'source-code-pro', monospace, sans-serif;
+}
+
 #site-links li {
   font-family: $sans-serif-font;
   font-size: 16px;
@@ -32,6 +36,14 @@ article {
 
   h1, h2, h3, h4, h5, h6 {
     font-family: $article-sans-serif-font;
+
+    code {
+      background-color: $background-color;
+      padding: 0;
+      font-size: 28px;
+      font-weight: 600;
+      border: 0;
+    }
 
     @include media($mobile) {
       font-size: 20px;
