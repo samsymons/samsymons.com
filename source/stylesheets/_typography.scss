@@ -178,7 +178,8 @@ blockquote {
 }
 
 #main-header .active {
-  color: $link-hover-color;
+  font-weight: bold;
+  color: $header-link-hover-color;
 }
 
 footer a {

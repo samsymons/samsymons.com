@@ -30,10 +30,10 @@ html {
     color: $light-text-color;
     font-size: 16px;
 
-    @include transition(color 0.25s);
+    @include transition(color .25s);
 
     &:hover {
-      color: $link-hover-color;
+      color: $header-link-hover-color;
     }
   }
 
