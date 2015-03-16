@@ -21,7 +21,7 @@ html {
 
 #main-header {
   margin-bottom: 35px;
-  padding: 14px 0px;
+  padding: 18px 0px;
 
   background-color: $background-color;
   border-bottom: 1px solid $border-color;
@@ -61,7 +61,7 @@ html {
 
     a {
       display: block !important;
-      text-align: center;
+      text-align: left;
       float: none !important;
     }
   }
@@ -76,7 +76,6 @@ html {
     margin-bottom: 0px;
 
     display: inline-block;
-    text-align: center;
 
     &:last-child {
       margin-right: 0px;
@@ -86,7 +85,7 @@ html {
   @include media($mobile) {
     @include clearfix();
 
-    text-align: center;
+    text-align: left;
     float: none;
   }
 }
@@ -118,7 +117,7 @@ article:last-child {
   margin-top: 10px;
   padding-top: 5px;
 
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid $border-color;
 }
 
 .pagination {
