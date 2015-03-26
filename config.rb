@@ -41,7 +41,6 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
-# configure :build do
-#   require "middleman-smusher"
-#   activate :smusher
-# end
+configure :build do
+  activate :minify_css
+end
