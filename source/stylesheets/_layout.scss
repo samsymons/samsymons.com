@@ -100,6 +100,11 @@ html {
 article {
   @include clearfix;
   margin-bottom: 70px;
+
+  img {
+    display: block;
+    margin: auto;
+  }
 }
 
 article:last-child {

@@ -5,7 +5,7 @@
   border-radius: 4px;
 }
 
-pre {
+pre:not(.line-pre) {
   @extend %highlighting;
 
   background-color: #FAFAFA;
