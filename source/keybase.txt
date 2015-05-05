@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/samsymons
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://samsymons.com
+  * I am samsymons (https://keybase.io/samsymons) on keybase.
+  * I have a public key with fingerprint 4AEA 28D8 513D A411 D017  A20B B5E3 7380 84C3 1D0C
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "4aea28d8513da411d017a20bb5e3738084c31d0c",
+            "host": "keybase.io",
+            "key_id": "b5e3738084c31d0c",
+            "kid": "010163174d486a785f898803b1e44a958f6a52e365ee788be5dfed2e181ef3db31570a",
+            "uid": "72dbdcb0f51cc47023f1de4e84477d19",
+            "username": "samsymons"
+        },
+        "service": {
+            "hostname": "samsymons.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1430851521,
+    "expire_in": 157680000,
+    "prev": "c6f1656654a06c34acbd02f06bb25184e946e24e17ef17557b85541c3f8177c0",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+yMM3AnicbZJtTBxFGMePF1t76VEkFWiUCCs2pFKyczu7O5wtYJuUs1awR/hAS6D7
+MgsL3O1xd0APOKFgLfYFVIogSFsseKFpS1GBxKbqAYoGWyE0UlKbUwqlEaJooCUx
+tO4S/WKcL5P5P7//f+Z5MsOGIJ0+oO+us/rNoaiNAaO+3SW6zFc2+SoIXhHdhKmC
+KMRrmyTb8rDD7pBtLsJEQA5zRiQiGlAiBwEQScByRpLnaUyxFCIRFChVFIh4Il9x
+ag41huecOEFWVE095Mqiqv4PX7hWIAEJGAqwUISI4VhESygRIZLiAYaQS6SRxHC0
+EVMMjTGLEI9pUcKiEQMEsESJPAVoluTUuJK1ONYo8qLAkxINBAGypJGSgIghRhCy
+rAgSNdCJHTbOilXayVmdbqticxKeeEKVS2UBazPQWvkvkiAoVtVtdyguRVCK1FK+
+y2V3mjSry23X2DLM5/6TksvLNlGdpOooxQ6nrNgIE1BJwSVrsQBSpDpT2gjiCXzY
+LjtwrqwRNMsgUl3aPbhUjRQYCTA0w9CQIxmBgpzAi6RRIhmeN9IAQZwIGWyEGLBY
+AixNszyiaQgESkKAZQWS0PoqtimECarP5PK0juQ8G+cqcWDCM+jLDtYF6HXrngjU
+/oJOvyH03x8S2bnpkWniBQnPhLkLTocPWb9vJy2LQQ8aC+ceNXWVdZxcnvYF+gK5
+t7bZ3391Ym/4ut75yMrG5M/vF/dfTfUif0f72Yzr0Xnv5V2Fup1Z6Ye+m03bm5s8
+793xbvYwvE8vlB+Y/rkorXYkJTT6+GNHjrjTZyYuVepaFutn50NaI9pr/PsDw1LC
+vgq/fiGl9rnfp6/U6fre2HJLGonvq9rQE3WrbaEp7XJDdpk+PHpk4kSkd3yA02XF
+CT80dHQvWWpmDTkxff1/Tn2xp6cG1S0eL9w+0LYwdoC4dqg4vTmon4hNGom7wc3s
+e8qw5fHhj6+9HP1ls6XZt8I8W3ZwayeKGBg96frkjnXXzCX+bs/w+dWcqvpn8pdr
+U+syPOPd7/xW3Nm6ezC1NyAp/Mmxh6aBi9tfi3XfyLz5E/FXU2r67WnrObclLeFC
+vdnQlHk2q5ScPL102f8SWhrco7fQR0cFs777WMjFI2e8mzuXqzvrpnRPb+s6/3r1
+vmMJc897Gw46V4tP3ow7MhQ3v9Vr7g2e/+Uj7scWQ3mH5V5wxr2NsYa5Ao4u6IqJ
+m06/k3Jqpavog7e7a772h8Tar6yv8reGTeYkjv2B958hPZ/VKqExwWbPp0ctHyb3
+tUWFvFh+rqh7ZvJUZMsU3OWy+H9dDf4me2V4/eTDE+bKcRCxI7mqcXNSRXatx1P6
+7e0H0X8DiQKlZw==
+=PZqH
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/samsymons
+
+==================================================================
