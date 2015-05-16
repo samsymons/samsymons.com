@@ -1,0 +1,7 @@
+---
+title: recon.cx
+date: 2015-05-16 04:19 UTC
+link: https://recon.cx/
+---
+
+Another security conference, this one focused on reverse engineering. I hadn't heard of these guys before, which is surprising; there's some great stuff to be found. Check out [last year's videos](https://recon.cx/2014/video/) in particular.
