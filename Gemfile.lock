@@ -8,7 +8,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.3.8)
-    bourbon (4.2.2)
+    bourbon (4.2.3)
       sass (~> 3.4)
       thor
     builder (3.2.2)
@@ -42,7 +42,7 @@ GEM
       uber (~> 0.0.4)
     httpclient (2.6.0.1)
     i18n (0.7.0)
-    json (1.8.2)
+    json (1.8.3)
     kramdown (1.7.0)
     listen (2.10.0)
       celluloid (~> 0.16.0)
@@ -87,7 +87,7 @@ GEM
       sprockets (~> 2.12.1)
       sprockets-helpers (~> 1.1.0)
       sprockets-sass (~> 1.3.0)
-    minitest (5.6.1)
+    minitest (5.7.0)
     multi_json (1.11.0)
     neat (1.7.2)
       bourbon (>= 4.0)
@@ -106,11 +106,11 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (10.4.2)
-    rb-fsevent (0.9.4)
+    rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.2.3)
-    sass (3.4.13)
+    sass (3.4.14)
     smusher (0.4.9)
       httpclient (>= 2.2)
       json
@@ -149,3 +149,6 @@ DEPENDENCIES
   middleman-smusher
   neat
   redcarpet
+
+BUNDLED WITH
+   1.10.2
