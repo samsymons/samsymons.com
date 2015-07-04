@@ -153,7 +153,7 @@ article:last-child {
 }
 
 .year {
-  margin-top: 0px;
+  margin-top: 0;
 
   li {
     margin-bottom: 40px;
@@ -161,7 +161,7 @@ article:last-child {
 }
 
 .year-header {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 20px;
   padding-bottom: 4px;
 
@@ -172,29 +172,29 @@ article:last-child {
 
 .month {
   margin-bottom: 25px;
-}
 
-.month li {
-  margin-bottom: 8px;
-}
+  li {
+    margin-bottom: 8px;
+  }
 
-.month h3 {
-  margin-top: 0px;
-  margin-bottom: 7px;
+  h3 {
+    margin-bottom: 7px;
+    margin-top: 0;
+  }
 }
 
 /* Projects */
 
 #projects {
-  margin-top: 0px;
+  margin-top: 0;
 
   list-style: none;
-  padding: 0px;
+  padding: 0;
 }
 
 .project {
   border-bottom: 1px solid #eee;
-  padding: 30px 0px 34px 0px;
+  padding: 30px 0 34px 0;
 
   @include media($mobile) {
     text-align: center;
@@ -205,20 +205,20 @@ article:last-child {
   }
 
   .blue-button:last-child {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   &:last-child {
-    border-bottom: none;
-    padding-bottom: 0px;
+    border-bottom: 0;
+    padding-bottom: 0;
   }
 
   &:first-child {
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   h2 {
-    margin-top: 0px;
+    margin-top: 0;
     line-height: 26px;
 
     font-weight: 600;
@@ -231,17 +231,17 @@ article:last-child {
 
 .blue-button {
   display: inline-block;
-  padding: 7px 0px 6px 0px;
+  padding: 7px 0 6px 0;
 
   border-radius: 5px;
-  color: white;
+  color: #ffffff;
 
   font-size: 15px;
   font-weight: 600;
   line-height: 20px;
 
   text-align: center;
-  text-shadow: 0px -1px 1px #002170;
+  text-shadow: 0 -1px 1px #002170;
 
   width: 105px;
 
@@ -253,12 +253,10 @@ article:last-child {
 
   border: 1px solid #0055C7;
 
-  -moz-box-shadow: 0px 1px 2px 0px #589BF2, inset 0px 1px 1px 0px #A8D8FF;
-  -webkit-box-shadow: 0px 1px 2px 0px #589BF2, inset 0px 1px 1px 0px #A8D8FF;
-  box-shadow: 0px 1px 2px 0px #589BF2, inset 0px 1px 1px 0px #A8D8FF;
+  box-shadow: 0px 1px 2px 0px #589bf2, inset 0px 1px 1px 0px #a8d8ff;
 
   &:hover {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -267,8 +265,8 @@ article:last-child {
   list-style: none;
 
   li {
-    margin-right: 10px;
     display: inline-block;
+    margin-right: 10px;
   }
 
   @include media($mobile) {
@@ -277,9 +275,24 @@ article:last-child {
   }
 }
 
-/* Footer: */
+// Footer:
 
 footer {
   margin-top: 45px;
+}
+
+.footnotes {
+  border-top: 1px solid $border-color;
+
+  li {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
 }
 
