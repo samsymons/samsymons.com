@@ -1,5 +1,5 @@
 ---
-title: A Reverse Engineering Curriculum
+title: A Reverse Engineering Reading List
 date: 2015-05-13 03:31 UTC
 tags:
 ---
