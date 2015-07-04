@@ -3,7 +3,7 @@
 html {
   background-color: $background-color;
 
-  font-size: 18px;
+  font-size: 16px;
 
   text-rendering: optimizeLegibility;
 
@@ -28,7 +28,7 @@ html {
 
   a {
     color: $light-text-color;
-    font-size: 16px;
+    font-size: 14px;
 
     @include transition(color .25s);
 
