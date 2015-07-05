@@ -11,7 +11,7 @@
 
     <script type"text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <%= stylesheet_link_tag 'normalize', 'all' %>
+    <%= stylesheet_link_tag 'normalize', 'bigfoot-number', 'all' %>
     <%= javascript_include_tag 'highlight.min', 'retina.min', 'bigfoot.min' %>
 
     <script>hljs.initHighlightingOnLoad();</script>
@@ -44,7 +44,7 @@
         <%= yield %>
 
         <footer>
-          <p id="footer-details">&copy; <%= Time.now.year %> Sam Symons. Check out the source on <a href="http://github.com/samsymons/samsymons.com/">GitHub</a>.</p>
+          <p id="footer-details">&copy; <%= Time.now.year %> Sam Symons. <a href="https://github.com/samsymons">GitHub</a> &bull; <a href="https://twitter.com/sam_symons">Twitter</a> &bull; <a href="https://keybase.io/samsymons">Keybase</a>.</p>
         </footer>
       </div>
     </div>

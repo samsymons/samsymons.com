@@ -117,7 +117,7 @@ article {
 }
 
 h1, h2, h3 {
-  margin: 25px 0px 10px 0px;
+  margin: 50px 0px 10px 0px;
 
   font-family: $sans-serif-font;
   font-weight: 600;
@@ -164,7 +164,7 @@ blockquote {
   font-style: italic;
 
   a {
-    color: darken($light-text-color, 20%);
+    color: $light-text-color;
   }
 }
 

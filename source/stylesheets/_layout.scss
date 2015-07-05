@@ -279,10 +279,18 @@ article:last-child {
 
 footer {
   margin-top: 45px;
+
+  a {
+    margin: 0px 3px;
+  }
 }
 
 .footnotes {
   border-top: 1px solid $border-color;
+  
+  a {
+    border: none;
+  }
 
   li {
     font-size: 16px;
@@ -296,3 +304,8 @@ footer {
   }
 }
 
+// Hacks:
+
+.gist-meta a {
+  border-bottom: none;
+}
