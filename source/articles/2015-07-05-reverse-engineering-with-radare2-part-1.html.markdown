@@ -104,7 +104,7 @@ Wrong!
 
 Alright, that was a long shot. The `wcscmp` function is interesting though. Perhaps it can be used to figure out if something is preventing the true password from being printed. The man page for `wcscmp` has this to say:
 
-```
+```text
 The wcscmp() function is the wide-character equivalent of the strcmp(3) function. It compares the wide-character string pointed to by s1 and the wide-character string pointed to by s2.
 ```
 

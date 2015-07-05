@@ -10,10 +10,11 @@ pre:not(.line-pre) {
 
   background-color: #FAFAFA;
   padding: 5px 9px;
+  padding-right: 0;
 
   font-size: 14px;
   line-height: 20px;
-  overflow: scroll;
+  word-wrap: normal;
 
   @include media($mobile) {
     padding: 2px 6px;
@@ -27,7 +28,6 @@ code {
 
   font-size: 14px;
   line-height: 20px;
-  overflow: scroll;
 
   @include media($mobile) {
     padding: 0px 4px;
@@ -40,8 +40,20 @@ pre code {
   padding: 7px 12px;
 
   margin: 0px;
+  margin-right: 9px;
   padding: 0px;
   border: none;
+
+  word-wrap: normal;
+  white-space: pre;
+
+  overflow: scroll;
+  overflow-x: scroll;
+}
+
+pre code.text {
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 pre .comment,
