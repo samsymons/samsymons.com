@@ -4,17 +4,17 @@ date: 2015-07-05 08:00 UTC
 tags:
 ---
 
-A couple of weeks back, the folks at RPISEC [posted the lecture slides and lab contents](https://github.com/RPISEC/MBE) of their [Modern Binary Exploitation course](http://security.cs.rpi.edu/courses/binexp-spring2015/), held earlier this year. The goal of the course is to take somebody with basic C skills and have them work their way through a series of progressively more difficult challenges, with the goal of learning how to reverse engineer software.
+A couple of weeks back, the folks at RPISEC [posted the lecture slides and lab contents](https://github.com/RPISEC/MBE) of their [Modern Binary Exploitation course](http://security.cs.rpi.edu/courses/binexp-spring2015/), held earlier this year. The course is designed to take somebody with basic C skills and have them work their way through a series of reverse engineering challenges of increasing difficulty.
 
-This was a great opportunity to fire up [Radare2](http://radare.org/r/index.html) and put it to work. This series of posts will work through each of the problems, with a focus on solving them using Radare2 (and a little help from gdb and friends along the way).
+This seemed like a great opportunity to fire up [Radare2](http://radare.org/r/index.html) and put it to work. This series of posts will work through each of the lecture challenges and labs, with a focus on solving them using Radare2 (and a little help from gdb and friends along the way).
 
 I believe that reverse engineering is a fantastic skill for software developers to pick up. The idea may carry connotations of software piracy with it, but it's tremendously useful for debugging software and learning how compilers work. Plus, it's just _fun_.
 
 ### Introduction to Radare2
 
-The first order of business: what _is_ Radare2? It's... a little complicated. At its core, it is an [open source](https://github.com/radare/radare2) framework designed to help reverse engineer binaries. You could build your own disassembler using Radare2, but you're probably more likely to use the tools it comes with out of the box.
+The first order of business: what _is_ Radare2? It's... a little complicated. At its core, it is an [open source](https://github.com/radare/radare2) framework designed to help disassemble software.
 
-It comes with a set of utilities to help with common RE tasks, such as base conversion and file info extraction. It also packs a powerful CLI, `r2`, for interactively disassembling<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> programs; if you're familiar with [IDA Pro](https://www.hex-rays.com/products/ida/index.shtml) or [Hopper](http://hopperapp.com/), then you have a good idea of what this CLI can do.
+It comes with a set of utilities to help with common RE tasks, like base conversion and file info extraction. It also packs a powerful CLI, `r2`, for interactively disassembling<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> programs. If you're familiar with [IDA Pro](https://www.hex-rays.com/products/ida/index.shtml) or [Hopper](http://hopperapp.com/), then you have a good idea of what this CLI can do.
 
 Programs like IDA may be easier to get up and running with, but I'm a fan of Radare2 because it can be set up on remote servers easily, and often comes preinstalled on CTF sites like [Smash The Stack](http://smashthestack.org/).
 
@@ -32,7 +32,7 @@ If you're keen to check out the rest of the challenges ahead of time, the full s
 
 ### Challenge 1: crackme0x00a
 
-After running `./crackme0x00a` and entering a few passwords unsuccessfully, it's clear that a brute force approach is not going to work. A smarter tactic is to disassemble the file and figure out how it works by reading the assembly.
+After running `./crackme0x00a` and entering a few passwords unsuccessfully, it's clear that a brute force approach is not going to work. A smarter tactic is to disassemble the file and figure out how it works by reading the output.
 
 The primary Radare2 UI can be started using the `r2` command. It takes a path to a binary as an argument, along with some optional arguments, which I'll dig into in a future article. For now, run `r2 crackme0x00a` to open the first challenge.
 
