@@ -36,7 +36,7 @@ After running `./crackme0x00a` and entering a few passwords unsuccessfully, it's
 
 The primary Radare2 UI can be started using the `r2` command. It takes a path to a binary as an argument, along with some optional arguments, which I'll dig into in a future article. For now, run `r2 crackme0x00a` to open the first challenge.
 
-The main UI is reminiscent of the Metasploit console, if you're familiar with that. It has its own commands and state which you can use to explore a file, as well as editing and running it with a debugger. To illustrate how shell-like Radare2 is, you can navigate the file system just like you would in bash:
+The main UI is reminiscent of a Meterpreter shell, but capable of much more. It has its own commands and state which you can use to explore a file, as well as editing and running it with a debugger. To illustrate how shell-like Radare2 is, you can navigate the file system just like you would in bash:
 
 ```
 sam@remote:/challenges/lecture1$ r2 crackme0x00a
