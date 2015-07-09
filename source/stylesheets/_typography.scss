@@ -51,6 +51,11 @@ article {
     }
   }
 
+  h4 {
+    display: block;
+    border-bottom: 1px solid $border-color;
+  }
+
   .article-title {
     display: inline-block;
     font-size: 28px;
