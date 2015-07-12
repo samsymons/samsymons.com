@@ -1,6 +1,7 @@
 activate :blog do |blog|
   blog.layout = "article"
   blog.permalink = "blog/:title"
+  blog.taglink = "tags/{tag}.html"
 
   blog.sources = "articles/:year-:month-:day-:title.html"
 
@@ -19,6 +20,12 @@ activate :directory_indexes
 helpers do
   def metadata_for_article(article)
     "<time>Published #{article.date.strftime('%B %e, %Y')}</time><span class='metadata-separator'>•</span><a class='permalink' title='Permalink' href='#{article.url}'>&infin;</a>"
+  end
+
+  def markup_for_tag(tag)
+    if tag
+      "<li class='tag'><a href='#{tag_path(tag)}'>##{tag}</a></li>"
+    end
   end
 
   def navigation_link_to(title, path)

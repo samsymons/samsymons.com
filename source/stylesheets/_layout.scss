@@ -105,6 +105,18 @@ article {
     display: block;
     margin: auto;
   }
+
+  .tags {
+    margin-top: 0;
+    padding: 0;
+
+    li {
+      list-style: inline;
+      display: inline-block;
+
+      margin-right: 15px;
+    }
+  }
 }
 
 article:last-child {
@@ -287,7 +299,7 @@ footer {
 
 .footnotes {
   border-top: 1px solid $border-color;
-  
+
   a {
     border: none;
   }
