@@ -1,9 +1,10 @@
 ---
 title: Software Security Course Review
 date: 2015-04-13 16:12 UTC
+tags:
 ---
 
-As a follow up to the [crypto course from earlier this year](https://samsymons.com/blog/dan-boneh-crypto-course/), I enrolled in the [software security course from the University of Maryland](https://www.coursera.org/course/softwaresec) for something a bit more hands-on.
+As a follow up to the [crypto course from earlier this year][1], I enrolled in the [software security course from the University of Maryland][2] for something a bit more hands-on.
 
 I wanted to write up a short review of the course here, especially since I haven't seen many (any?) other security courses like this offered on Coursera.
 
@@ -33,3 +34,6 @@ With courses I've taken in the past, I've gone the lone wolf approach and tried 
 This time, I jumped into the ##softwaresec IRC channel on Freenode and got to know people there. Having to explain concepts to people was *far* more helpful at making sure I understood the material than simply taking notes and answering quiz questions.
 
 This was a great course, and I'd love to see a follow-up to it in the future.
+
+[1]:	https://samsymons.com/blog/dan-boneh-crypto-course/
+[2]:	https://www.coursera.org/course/softwaresec
