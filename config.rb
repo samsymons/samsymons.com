@@ -1,7 +1,9 @@
 activate :blog do |blog|
   blog.layout = "article"
   blog.permalink = "blog/:title"
+
   blog.taglink = "tags/{tag}.html"
+  blog.tag_template = "tag.html"
 
   blog.sources = "articles/:year-:month-:day-:title.html"
 
@@ -23,8 +25,8 @@ helpers do
   end
 
   def markup_for_tag(tag)
-    if tag
-      "<li class='tag'><a href='#{tag_path(tag)}'>##{tag}</a></li>"
+    unless tag.nil?
+      "<li class='tag'><a href='#{tag_path(tag)}'>##{tag.upcase}</a></li>"
     end
   end
 

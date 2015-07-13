@@ -1,17 +1,19 @@
 <article>
-  <% if article.data.link %>
-    <h1 class="article-title link"><%= link_to formatted_title(article.title), article.data.link %> &rarr;</h1>
-  <% else %>
-    <h1 class="article-title"><%= link_to formatted_title(article.title), article %></h1>
-  <% end %>
+  <div class="article-header">
+    <% if article.data.link %>
+      <h1 class="article-title link"><%= link_to formatted_title(article.title), article.data.link %> &rarr;</h1>
+    <% else %>
+      <h1 class="article-title"><%= link_to formatted_title(article.title), article %></h1>
+    <% end %>
 
-  <% if article.tags %>
-    <ul class="tags">
-      <% article.tags.each do |tag| %>
-        <%= markup_for_tag(tag) %>
-      <% end %>
-    </ul>
-  <% end %>
+    <% unless article.tags.nil? || article.tags.empty? %>
+      <ul class="tags">
+        <% article.tags.each do |tag| %>
+          <%= markup_for_tag(tag) %>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
 
   <%= article.body %>
 

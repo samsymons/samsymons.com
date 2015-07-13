@@ -114,7 +114,7 @@ article {
       list-style: inline;
       display: inline-block;
 
-      margin-right: 15px;
+      margin-right: 10px;
     }
   }
 }
@@ -124,7 +124,10 @@ article:last-child {
 }
 
 .article-title {
-  margin-top: 0px;
+  margin: 0;
+}
+
+.article-header {
   margin-bottom: 17px;
 }
 
