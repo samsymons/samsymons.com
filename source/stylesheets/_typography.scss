@@ -52,6 +52,7 @@ article {
   }
 
   h4 {
+    margin-top: 40px;
     display: block;
     border-bottom: 1px solid $border-color;
   }
@@ -59,7 +60,6 @@ article {
   .article-title {
     display: inline-block;
     font-size: 28px;
-
 
     @include media($mobile) {
       font-size: 24px;
@@ -73,7 +73,22 @@ article {
     line-height: 1.2em;
 
     &:hover {
-      border-bottom: none;
+      border-bottom: 0;
+    }
+  }
+
+  .tag a {
+    color: $light-text-color;
+
+    font-family: $sans-serif-font;
+    font-size: 14px;
+    font-weight: bold;
+
+    border-bottom: 0;
+    transition: color 0.25s linear;
+
+    &:hover {
+      color: black;
     }
   }
 
