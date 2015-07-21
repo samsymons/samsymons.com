@@ -1,7 +1,7 @@
 ---
 title: Linux Insides
 date: 2015-05-03 22:01 UTC
-tags:
+tags: linux
 link: http://0xax.gitbooks.io/linux-insides/content/index.html
 ---
 
