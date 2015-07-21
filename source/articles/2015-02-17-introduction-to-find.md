@@ -1,6 +1,7 @@
 ---
 title: Introduction to `find`
 date: 2015-02-17 12:00 UTC
+tags: unix, tutorial
 ---
 
 Of the various Unix utilities I use semi-regularly, `find` is the one that has me reaching for its documentation the most often. Every time I do, it's a reminder of how powerful it can be, if you can just remember how to use it.
@@ -27,7 +28,7 @@ Say you want to find all executable files under a directory. This is the incanta
 
 The `-perm` argument can be preceded by either a `+` or a `-`. The man page for `find` has this to say:
 
->	If the mode is preceded by a plus ("+"), this primary evaluates to true if any of the bits in the mode are set in the file's mode bits.
+>   If the mode is preceded by a plus ("+"), this primary evaluates to true if any of the bits in the mode are set in the file's mode bits.
 
 ### Finding Files By Size
 
