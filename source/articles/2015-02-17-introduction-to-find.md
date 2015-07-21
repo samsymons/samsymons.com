@@ -1,5 +1,5 @@
 ---
-title: Introduction to `find`
+title: Introduction to find
 date: 2015-02-17 12:00 UTC
 tags: unix, tutorial
 ---
