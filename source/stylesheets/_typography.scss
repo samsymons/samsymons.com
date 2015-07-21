@@ -117,6 +117,14 @@ article {
   }
 }
 
+h1#category-title {
+  margin-bottom: 45px;
+  padding-bottom: 15px;
+
+  font-size: 32px;
+  border-bottom: 1px solid $border-color;
+}
+
 .metadata-separator {
   margin: 0px 7px;
 }
