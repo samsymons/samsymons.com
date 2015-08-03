@@ -58,8 +58,8 @@ article {
   }
 
   .article-title {
-    display: inline-block;
-    font-size: 28px;
+    display: block;
+    font-size: 30px;
 
     @include media($mobile) {
       font-size: 24px;
@@ -71,6 +71,7 @@ article {
     border-bottom: none;
 
     line-height: 1.2em;
+    text-align: center;
 
     &:hover {
       border-bottom: 0;
@@ -78,14 +79,14 @@ article {
   }
 
   .tag a {
-    color: $light-text-color;
+    color: $tag-color;
 
     font-family: $sans-serif-font;
     font-size: 14px;
     font-weight: bold;
 
     border-bottom: 0;
-    transition: color 0.25s linear;
+    transition: color 0.25s ease-in;
 
     &:hover {
       color: black;
@@ -179,7 +180,7 @@ a {
   text-decoration: none;
   color: $text-color;
 
-  border-bottom: 1px solid $link-color;
+  border-bottom: 1px dotted $link-color;
 }
 
 blockquote {
@@ -198,6 +199,7 @@ blockquote {
 
 #main-header a {
   border-bottom: none;
+  font-size: 15px;
 }
 
 #main-header .active {
