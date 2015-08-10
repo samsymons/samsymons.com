@@ -1,6 +1,6 @@
-$sans-serif-font: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$article-sans-serif-font: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif-font: "minion-pro", serif;
+$sans-serif-font: "Avenir Next", "Avenir", "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$article-sans-serif-font: "Avenir Next", "Avenir", "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font: "minion-pro", serif;
 
 body {
   font-family: $sans-serif-font;
@@ -9,7 +9,7 @@ body {
 p, li {
   margin-top: 0px;
 
-  font-family: $serif-font;
+  font-family: $body-font;
   font-size: 19px;
 
   line-height: 30px;
@@ -36,6 +36,7 @@ article {
 
   h1, h2, h3, h4, h5, h6 {
     font-family: $article-sans-serif-font;
+    font-weight: 400;
 
     code {
       background-color: $background-color;
@@ -59,7 +60,7 @@ article {
 
   .article-title {
     display: block;
-    font-size: 30px;
+    font-size: 28px;
 
     @include media($mobile) {
       font-size: 24px;
@@ -82,8 +83,8 @@ article {
     color: $tag-color;
 
     font-family: $sans-serif-font;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 500;
 
     border-bottom: 0;
     transition: color 0.25s ease-in;
@@ -146,7 +147,7 @@ h1#category-title {
 }
 
 h1, h2, h3 {
-  margin: 50px 0px 10px 0px;
+  margin: 40px 0px 10px 0px;
 
   font-family: $sans-serif-font;
   font-weight: 600;
@@ -203,7 +204,7 @@ blockquote {
 }
 
 #main-header .active {
-  font-weight: bold;
+  font-weight: 500;
   color: $header-link-hover-color;
 }
 
