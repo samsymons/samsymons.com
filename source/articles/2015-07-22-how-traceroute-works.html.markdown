@@ -4,7 +4,7 @@ date: 2015-07-22 00:30 UTC
 tags: networking
 ---
 
-After taking Stanford's [introductory networking course][1] earlier this year, I decided it would be fun exercise to put some of that knowledge into practice and go about recreating traceroute in Go. Traceroute is a neat little program; it ties together a bunch of networking protocols in a relatively simple way, making for a good test of a language's networking APIs.
+After taking Stanford's [introductory networking course][1] earlier this year, I decided it would be fun exercise to put some of that knowledge into practice and go about recreating traceroute in Rust. Traceroute is a neat little program; it ties together a bunch of networking protocols in a relatively simple way, making for a good test of a language's networking APIs.
 
 ### A Brief Overview of Network Protocols
 
@@ -145,7 +145,7 @@ Traceroute deliberately picks unlikely port numbers because it has nothing to ac
 
 ### Next Time
 
-By now you should have a fairly good idea of how traceroute does its thing. In the next article, I’ll investigate how you can use Go to reimplement traceroute’s basic functionality.
+By now you should have a fairly good idea of how traceroute does its thing. In the next article, I’ll investigate how you can use Rust to reimplement traceroute’s basic functionality.
 
 [1]:	http://online.stanford.edu/course/intro-computer-networking-winter-2014
 [2]:	https://en.wikipedia.org/wiki/Transmission_Control_Protocol "TCP on Wikipedia"
