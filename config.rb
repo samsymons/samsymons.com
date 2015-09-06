@@ -13,7 +13,11 @@ activate :blog do |blog|
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.method = :rsync
+  deploy.host = '45.55.57.243'
+  deploy.path = '/var/www/blog'
+  deploy.user = 'deploy'
+  deploy.clean = true
   deploy.build_before = true
 end
 
