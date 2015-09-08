@@ -17,6 +17,7 @@ activate :deploy do |deploy|
   deploy.host = '45.55.57.243'
   deploy.path = '/var/www/blog'
   deploy.user = 'deploy'
+  deploy.flags = "-avz -e 'ssh -i /Users/samsymons/.ssh/digitalocean'"
   deploy.clean = true
   deploy.build_before = true
 end
