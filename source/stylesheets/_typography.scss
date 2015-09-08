@@ -1,6 +1,6 @@
 $sans-serif-font: "Avenir Next", "Avenir", "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $article-sans-serif-font: "Avenir Next", "Avenir", "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$body-font: "minion-pro", serif;
+$body-font: "Georgia", serif;
 
 body {
   font-family: $sans-serif-font;
@@ -10,7 +10,7 @@ p, li {
   margin-top: 0px;
 
   font-family: $body-font;
-  font-size: 19px;
+  font-size: 18px;
 
   line-height: 30px;
 
