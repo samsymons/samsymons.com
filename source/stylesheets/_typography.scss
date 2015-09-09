@@ -58,6 +58,14 @@ article {
     border-bottom: 1px solid $border-color;
   }
 
+  a {
+    @include transition(color .25s);
+
+    &:hover {
+      color: $header-link-hover-color;
+    }
+  }
+
   .article-title {
     display: block;
     font-size: 28px;
@@ -74,8 +82,11 @@ article {
     line-height: 1.2em;
     text-align: center;
 
+    @include transition(color .25s);
+
     &:hover {
       border-bottom: 0;
+      color: $header-link-hover-color;
     }
   }
 
