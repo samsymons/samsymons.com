@@ -1,6 +1,6 @@
-$sans-serif-font: "Avenir Next", "Avenir", "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$article-sans-serif-font: "Avenir Next", "Avenir", "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$body-font: "Georgia", serif;
+$sans-serif-font: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$article-sans-serif-font: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font: "Droid Serif", "Georgia", serif;
 
 body {
   font-family: $sans-serif-font;
@@ -10,7 +10,7 @@ p, li {
   margin-top: 0px;
 
   font-family: $body-font;
-  font-size: 18px;
+  font-size: 17px;
 
   line-height: 30px;
 
@@ -21,7 +21,7 @@ p, li {
 }
 
 code {
-  font-family: 'source-code-pro', monospace, sans-serif;
+  font-family: 'Source Code Pro', monospace, sans-serif;
 }
 
 #site-links li {
