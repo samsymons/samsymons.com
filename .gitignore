@@ -13,4 +13,4 @@
 # Ignore Sass' cache
 /.sass-cache
 
-.Ulysses-group.plist
+*.plist

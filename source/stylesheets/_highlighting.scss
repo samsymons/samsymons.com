@@ -43,8 +43,8 @@ pre code {
   word-wrap: normal;
   white-space: pre;
 
-  overflow: scroll;
-  overflow-x: scroll;
+  overflow: auto;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
