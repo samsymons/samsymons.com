@@ -31,7 +31,7 @@ helpers do
 
   def markup_for_tag(tag)
     unless tag.nil?
-      "<li class='tag'><a href='#{tag_path(tag)}'>##{tag.upcase}</a></li>"
+      "<li class='tag'><a href='#{tag_path(tag)}'>#{tag.upcase}</a></li>"
     end
   end
 

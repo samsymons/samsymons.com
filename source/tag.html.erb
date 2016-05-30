@@ -2,7 +2,7 @@
 title: Category
 ---
 
-<h1 id="category-title">#<%= tagname %></h1>
+<h1 id="category-title"><%= tagname.capitalize %></h1>
 
 <ul class="year">
   <% page_articles.group_by {|a| a.date.year }.each do |year, articles| %>
