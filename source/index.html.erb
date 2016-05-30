@@ -12,11 +12,11 @@ pageable: true
   <span class="pagination">
     <% if paginate %>
       <% if next_page %>
-        <%= link_to "&larr; Next Page", next_page.url, class: 'next-page' %>
+        <%= link_to "&larr; Previous Page", next_page.url, class: 'next-page' %>
       <% end %>
 
       <% if prev_page %>
-        <%= link_to "Previous Page &rarr;", prev_page.url, class: 'previous-page' %>
+        <%= link_to "Next Page &rarr;", prev_page.url, class: 'previous-page' %>
       <% end %>
     <% end %>
   </span>
