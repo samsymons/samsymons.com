@@ -15,8 +15,8 @@ p, li {
   line-height: 30px;
 
   @include media($mobile) {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 17px;
+    line-height: 26px;
   }
 }
 
