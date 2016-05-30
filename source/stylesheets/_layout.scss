@@ -20,21 +20,16 @@ html {
 /* Header: */
 
 #main-header {
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   padding: 21px 0px;
 
-  background-color: $background-color;
-  border-bottom: 1px solid $border-color;
+  background-color: #fac830;
 
   a {
-    color: $light-text-color;
+    color: white;
     font-size: 14px;
 
     @include transition(color .25s);
-
-    &:hover {
-      color: $header-link-hover-color;
-    }
   }
 
   @include clearfix;
@@ -43,7 +38,6 @@ html {
 #main-title {
   margin: 0px;
   font-weight: normal;
-
 
   a {
     display: inline-block;

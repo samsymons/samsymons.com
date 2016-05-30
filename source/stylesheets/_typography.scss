@@ -91,18 +91,16 @@ article {
   }
 
   .tag a {
+    padding: 3px 5px 1px 5px;
+
     color: $tag-color;
+    border-radius: 4px;
 
     font-family: $sans-serif-font;
     font-size: 13px;
     font-weight: 500;
 
-    border-bottom: 0;
-    transition: color 0.25s ease-in;
-
-    &:hover {
-      color: black;
-    }
+    border: 1px solid #eee;
   }
 
   .link {
@@ -215,8 +213,8 @@ blockquote {
 }
 
 #main-header .active {
-  font-weight: 500;
-  color: $header-link-hover-color;
+  font-weight: 600;
+  color: white;
 }
 
 footer a {
