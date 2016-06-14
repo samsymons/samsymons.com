@@ -95,11 +95,6 @@ article {
   @include clearfix;
   margin-bottom: 70px;
 
-  img {
-    display: block;
-    margin: auto;
-  }
-
   .tags {
     margin-top: 5px;
     padding: 0;
@@ -111,6 +106,18 @@ article {
 
       margin-right: 10px;
     }
+  }
+
+  img {
+    display: block;
+    margin: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    border: 3px solid white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px #eee, 0px 1px 2px #ddd;
   }
 }
 
