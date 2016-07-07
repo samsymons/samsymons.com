@@ -37,7 +37,7 @@ GEM
       sass (>= 3.2, < 3.5)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffi (1.9.10)
+    ffi (1.9.13)
     haml (4.0.7)
       tilt
     hike (1.2.3)
@@ -161,4 +161,4 @@ DEPENDENCIES
   redcarpet
 
 BUNDLED WITH
-   1.12.3
+   1.12.5
