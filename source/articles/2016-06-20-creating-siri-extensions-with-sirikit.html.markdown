@@ -231,7 +231,6 @@ Telling Siri to take the user to your app is pretty easy. You do this by providi
 
 ```
 let userActivity = NSUserActivity()
-userActivity.userInfo = ["currencyAmount": Int(currencyAmount.amount)]
 completion(INSendPaymentIntentResponse.init(code: .success, userActivity: userActivity))
 ```
         
@@ -239,8 +238,8 @@ Then, in your App Delegate, you can handle the user activity like so:
 
 ```
 func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
-    if let userInfo = userActivity.userInfo, let _ = userActivity.interaction {
-      print("Do stuff here!")
+    if let interaction = userActivity.interaction, let intent = interaction.intent as? INSendPaymentIntent, let payee = intent.payee {
+      print("Paying \(payee.displayName) \(intent.currencyAmount!.amount!)")
     }
     
     return true
@@ -277,3 +276,5 @@ func configure(with interaction: INInteraction!, context: INUIHostedViewContext,
 ### Conclusion
 
 There’s still a lot to learn with SiriKit. I haven’t yet tested out sharing data between Siri extensions and the core app, or done a lot with handing off an interaction from Siri to the app, but this is still a fresh API. I’ll likely update the demo app as I continue to learn more, so check back on that if you’re curious to see how SiriKit works a little more in-depth.
+
+You can get the source code for this article [on GitHub](https://github.com/samsymons/Payments).
