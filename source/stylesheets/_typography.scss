@@ -1,5 +1,4 @@
 $sans-serif-font: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$article-sans-serif-font: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $body-font: "Droid Serif", "Georgia", serif;
 
 body {
@@ -35,7 +34,7 @@ article {
   color: $text-color;
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: $article-sans-serif-font;
+    font-family: $sans-serif-font;
     font-weight: 400;
 
     code {
@@ -131,7 +130,7 @@ article {
 h1#category-title {
   margin-bottom: 45px;
 
-  color: #fac830;
+  color: $header-color;
 
   font-size: 32px;
 }
@@ -194,7 +193,7 @@ a {
   text-decoration: none;
   color: $text-color;
 
-  border-bottom: 1px dotted $link-color;
+  border-bottom: 1px solid $link-color;
 }
 
 blockquote {
@@ -222,7 +221,7 @@ blockquote {
 }
 
 footer a {
-  transition: color 0.25s linear;
+  transition: color 0.15s linear;
 
   &:hover {
     color: $text-color;
