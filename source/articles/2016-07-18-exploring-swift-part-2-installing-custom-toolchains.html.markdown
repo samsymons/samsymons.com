@@ -20,7 +20,7 @@ The way Xcode manages these is by putting them all into `Library/Developer/Toolc
 
 As a toolchain is just a directory with some Swift binaries in it, building a toolchain of your very own isn't too scary. To kick things off, `cd` into your Swift directory and bring the project up to date:
 
-```
+```bash
 ./utils/update-build --clone-with-ssh
 ```
 
@@ -28,7 +28,7 @@ As a toolchain is just a directory with some Swift binaries in it, building a to
 
 You should be set to build Swift now.
 
-```
+```bash
 ./utils/build-script -R --llbuild --swiftpm
 ```
 
@@ -40,13 +40,13 @@ This script can be run after compilation to build a `swift-dev.toolchain` direct
 
 With your custom `swift-dev` toolchain in hand (it will be in the same build directory as Swift, `Ninja-Release`), head over to `Libary/Developer/Toolchains` and drop it in there. Now you can tell `xcrun` which version of Swift to use.
 
-```
+```bash
 export TOOLCHAINS=swift-dev
 ```
 
 After setting the `TOOLCHAINS` environment variable, the system will look in `Libary/Developer/Toolchains` for a corresponding version of Swift instead of using the toolchains that come packaged with Xcode. Now you're ready to use your new compiler!
 
-```
+```bash
 › swift --version
 Swift version 3.0-dev (LLVM 505155ac3d, Clang f8606ef4b8, Swift b4cba58330)
 Target: x86_64-apple-macosx10.9

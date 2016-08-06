@@ -28,7 +28,7 @@ Add a new Swift file to the framework named `PaymentsContact`. This is how the a
 
 Here’s my declaration of `PaymentsContact`:
 
-```
+```swift
 public class PaymentsContact {
   public let name: String
   public let emailAddress: String
@@ -58,7 +58,7 @@ Head back to the `Targets` list and click the add button again. In here, you sho
 
 This adds a new Intents extension to the project, handling workout intents. I want to handle payment intents, so the first place to look is `Info.plist`. In here, remove the workout intent rows under the `NSExtension` key, and replace them with `INSendPaymentIntent`. This is the end result, copied straight from the `.plist`.
 
-```
+```xml
 <dict>
 	<key>NSExtensionAttributes</key>
 	<dict>
@@ -82,7 +82,7 @@ This tells Siri that we want to handle the `INSendPaymentIntent`, that it should
 
 Inside `IntentHandler`, I added a short `INExtension` subclass which just checks for the intent type:
 
-```
+```swift
 import Intents
 
 class IntentHandler: INExtension {
@@ -150,27 +150,27 @@ I’ve added an `allContacts` function to `PaymentsContact`, like this:
 
 ```
 public class func allContacts() -> [PaymentsContact] {
-    return [
-      PaymentsContact(name: "Tim Cook", emailAddress: "tim@apple.com"),
-      PaymentsContact(name: "Craig Federighi", emailAddress: "craig@apple.com"),
-      PaymentsContact(name: "Phil Schiller", emailAddress: "phil@apple.com"),
-    ]
-  }
+  return [
+    PaymentsContact(name: "Tim Cook", emailAddress: "tim@apple.com"),
+    PaymentsContact(name: "Craig Federighi", emailAddress: "craig@apple.com"),
+    PaymentsContact(name: "Phil Schiller", emailAddress: "phil@apple.com"),
+  ]
+}
 ```
 
 We’ll also need a way to get an `INPerson` object from our contacts. This can be wrapped up in a simple instance function on `PaymentsContact`:
 
 ```
 public func inPerson() -> INPerson {
-    let nameFormatter = PersonNameComponentsFormatter()
+  let nameFormatter = PersonNameComponentsFormatter()
     
-    if let nameComponents = nameFormatter.personNameComponents(from: name) {
-      return INPerson(handle: emailAddress, nameComponents: nameComponents, contactIdentifier: nil)
-    }
-    else {
-      return INPerson(handle: emailAddress, displayName: name, contactIdentifier: nil)
-    }
+  if let nameComponents = nameFormatter.personNameComponents(from: name) {
+    return INPerson(handle: emailAddress, nameComponents: nameComponents, contactIdentifier: nil)
   }
+  else {
+    return INPerson(handle: emailAddress, displayName: name, contactIdentifier: nil)
+  }
+}
 ```
 
 Now we can check our `PaymentsContact` objects against the contacts provided by Siri inside `SendPaymentIntentHandler`. The `INSendPaymentIntentHandling` protocol defines another method for resolving the payee of a transaction, in the form of `resolvePayee(intent:completion:)`. This is where the app will take the name provided by Siri and determine what to do with it.
@@ -234,14 +234,14 @@ completion(INSendPaymentIntentResponse.init(code: .success, userActivity: userAc
         
 Then, in your App Delegate, you can handle the user activity like so:
 
-```
+```swift
 func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
-    if let interaction = userActivity.interaction, let intent = interaction.intent as? INSendPaymentIntent, let payee = intent.payee {
-      print("Paying \(payee.displayName) \(intent.currencyAmount!.amount!)")
-    }
-    
-    return true
+  if let interaction = userActivity.interaction, let intent = interaction.intent as? INSendPaymentIntent, let payee = intent.payee {
+    print("Paying \(payee.displayName) \(intent.currencyAmount!.amount!)")
   }
+    
+  return true
+}
 ```
 
 ### Displaying an Interface with Siri
@@ -254,7 +254,7 @@ To add a custom UI, add an extension the same way you added the basic Intent sup
 
 After that, it’s up to you to customise the IntentViewController. The `INUIHostedViewControlling` protocol is how Siri passes information into this class, which you can receive through the `configure` delegate method. Here’s a basic implementation:
 
-```
+```swift
 func configure(with interaction: INInteraction!, context: INUIHostedViewContext, completion: ((CGSize) -> Void)!) {
     if let sendIntent = interaction.intent as? INSendPaymentIntent {
       if let payee = sendIntent.payee {
