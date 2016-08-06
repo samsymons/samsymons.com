@@ -21,12 +21,14 @@ html {
 
 #main-header {
   margin-bottom: 50px;
-  padding: 24px 0px;
+  padding: 20px 0px;
 
-  background-color: $header-color;
+  background-color: white;
+
+  box-shadow: 0px 0px 1px #ddd, 0px 1px 3px #eee;
 
   a {
-    color: white;
+    color: $link-color;
     font-size: 14px;
 
     @include transition(color .25s);
@@ -107,7 +109,6 @@ article {
   .tags {
     margin-top: 5px;
     padding: 0;
-    background-color: white;
 
     li {
       list-style: inline;

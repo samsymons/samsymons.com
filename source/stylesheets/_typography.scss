@@ -1,5 +1,5 @@
 $sans-serif-font: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$body-font: "Droid Serif", "Georgia", serif;
+$heading-font: "Noto Serif", serif;
 
 body {
   font-family: $sans-serif-font;
@@ -8,13 +8,13 @@ body {
 p, li {
   margin-top: 0px;
 
-  font-family: $body-font;
-  font-size: 17px;
+  font-family: $sans-serif-font;
+  font-size: 18px;
 
   line-height: 30px;
 
   @include media($mobile) {
-    font-size: 17px;
+    font-size: 18px;
     line-height: 26px;
   }
 }
@@ -34,7 +34,7 @@ article {
   color: $text-color;
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: $sans-serif-font;
+    font-family: $heading-font;
     font-weight: 400;
 
     code {
@@ -61,7 +61,7 @@ article {
     @include transition(color .25s);
 
     &:hover {
-      color: $header-link-hover-color;
+      color: $link-color;
     }
   }
 
@@ -79,13 +79,12 @@ article {
     border-bottom: none;
 
     line-height: 1.2em;
-    text-align: center;
 
-    @include transition(color .25s);
+    @include transition(color .3s);
 
     &:hover {
       border-bottom: 0;
-      color: $header-link-hover-color;
+      color: $link-color;
     }
   }
 
@@ -130,9 +129,9 @@ article {
 h1#category-title {
   margin-bottom: 45px;
 
-  color: $header-color;
+  color: $link-color;
 
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .metadata-separator {
@@ -157,13 +156,17 @@ h1#category-title {
 h1, h2, h3 {
   margin: 40px 0px 10px 0px;
 
-  font-family: $sans-serif-font;
+  font-family: $heading-font;
   font-weight: 400;
 }
 
 h1 {
   margin-top: 0px;
   font-size: 36px;
+}
+
+#main-title {
+  font-family: $sans-serif-font;
 }
 
 h2 {
@@ -193,7 +196,7 @@ a {
   text-decoration: none;
   color: $text-color;
 
-  border-bottom: 1px solid $link-color;
+  border-bottom: 1px dotted $link-color;
 }
 
 blockquote {
@@ -217,7 +220,7 @@ blockquote {
 
 #main-header .active {
   font-weight: 600;
-  color: white;
+  color: $link-color;
 }
 
 footer a {

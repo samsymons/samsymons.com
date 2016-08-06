@@ -1,16 +1,14 @@
 ---
 title: Creating Siri Extensions With SiriKit
 date: 2016-06-20 23:18 UTC
-tags: swift, siri
+tags: swift, sirikit
 ---
 
-With the introduction of iOS 10 at WWDC 2016, Siri has finally been opened up to developers, in the form of [SiriKit](https://developer.apple.com/sirikit/).It comes with support for a fixed set of app categories for now, ranging from messaging and phone calls to payments and booking rides.
+With the introduction of iOS 10 at WWDC 2016, Siri has finally been opened up to developers, in the form of [SiriKit](https://developer.apple.com/sirikit/). It comes with support for a fixed set of app categories for now, ranging from messaging and phone calls to payments and booking rides.
 
-Siri is an extremely complicated product, having to manage many languages and process words correctly, so I wanted to see how easy it is to add support for it to an app.
+Siri is an extremely complicated product, having to manage many languages and process words correctly, so I wanted to see how easy it is to add support for it to an app. I’m going to walk through the entire process of building a basic payments app, covering Intents, the Intents user interface, and the overall SiriKit integration itself.
 
-I’m going to walk through the entire process of building a basic payments app, covering Intents, the Intents user interface, and the overall SiriKit integration itself.
-
-> Note: Because Siri does not yet run in the simulator, this sample code will only work on a device running iOS 10.
+> Note: Because Siri does not run in the simulator, this sample code will only work on a device running iOS 10.
 
 ### Defining the Payments App
 
