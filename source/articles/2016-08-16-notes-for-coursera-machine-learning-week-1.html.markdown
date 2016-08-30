@@ -136,7 +136,7 @@ $$
 This equation works for a single example, but we want to make sure that *all* of our training examples are matched closely. Instead, we want to do something like this:
 
 $$
-\sum\limits\_{I=1}^m (h\_\theta(x^{(i)}) - y^{(i)})^2
+\sum\limits\_{i=1}^m (h\_\theta(x^{(i)}) - y^{(i)})^2
 $$
 
 We’re just taking the sum of the squared difference between each input (\\(m\\) is the number of training examples) and its expected output. Each difference is squared so that there are no negative values — adding a negative value to the sum is obviously going to be a bad time.
