@@ -194,9 +194,13 @@ p {
 
 a {
   text-decoration: none;
-  color: $text-color;
+  color: $link-color;
 
-  border-bottom: 1px dotted $link-color;
+  border-bottom: 2px solid lighten($link-color, 15%);
+
+  &:hover {
+    border-bottom: 2px solid $link-color;
+  }
 }
 
 blockquote {
