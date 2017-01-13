@@ -1,5 +1,5 @@
-$sans-serif-font: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$heading-font: "Noto Serif", serif;
+$sans-serif-font: "Gotham SSm A", "Gotham SSm B", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font: "Hoefler Titling A", "Hoefler Titling B", "Noto Serif", serif;
 
 body {
   font-family: $sans-serif-font;
@@ -10,6 +10,8 @@ p, li {
 
   font-family: $sans-serif-font;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
 
   line-height: 30px;
 
@@ -35,7 +37,7 @@ article {
 
   h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font;
-    font-weight: 400;
+    font-weight: 300;
 
     code {
       background-color: $background-color;
@@ -67,7 +69,10 @@ article {
 
   .article-title {
     display: block;
-    font-size: 28px;
+    margin-bottom: 20px;
+
+    font-size: 34px;
+    text-align: center;
 
     @include media($mobile) {
       font-size: 24px;
@@ -224,7 +229,7 @@ blockquote {
 
 #main-header .active {
   font-weight: 600;
-  color: $link-color;
+  color: white;
 }
 
 footer a {

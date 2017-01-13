@@ -19,6 +19,8 @@
     <link href='https://fonts.gstatic.com' rel='preconnect' crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Source+Code+Pro" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6796156/6463372/css/fonts.css" />
+
     <script>hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript">
       $.bigfoot({
@@ -27,19 +29,21 @@
     </script>
   </head>
   <body>
-    <div class="content">
-      <header id="main-header">
-        <h1 id="main-title"><%= link_to "Sam Symons", '/' %></h1>
+    <div class="background-content">
+      <div class="content">
+        <header id="main-header">
+          <h1 id="main-title"><%= link_to "Sam Symons", '/' %></h1>
 
-        <nav id="main-navigation">
-          <ul id="site-links">
-            <li><%= navigation_link_to 'Articles', '/' %></li>
-            <li><%= navigation_link_to 'Archive', '/archive/' %></li>
-            <li><%= navigation_link_to 'Projects', '/projects/' %></li>
-          </ul>
-        </nav>
+          <nav id="main-navigation">
+            <ul id="site-links">
+              <li><%= navigation_link_to 'Articles', '/' %></li>
+              <li><%= navigation_link_to 'Archive', '/archive/' %></li>
+              <li><%= navigation_link_to 'Projects', '/projects/' %></li>
+            </ul>
+          </nav>
+        </header>
       </div>
-    </header>
+    </div>
 
     <div class="content">
       <div id="inner-content">

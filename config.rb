@@ -26,7 +26,7 @@ activate :directory_indexes
 
 helpers do
   def metadata_for_article(article)
-    "<time>Published #{article.date.strftime('%B %e, %Y')}</time><span class='metadata-separator'>•</span><a class='permalink' title='Permalink' href='#{article.url}'>&infin;</a>"
+    "<time>Published #{article.date.strftime('%B %e, %Y')}</time>"
   end
 
   def markup_for_tag(tag)

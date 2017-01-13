@@ -17,16 +17,23 @@ html {
   padding: 0px 20px;
 }
 
+.background-content {
+  width: 100%;
+
+  background-color: $header-color;
+  margin-bottom: 50px;
+}
+
 /* Header: */
 
 #main-header {
-  margin-bottom: 50px;
   padding: 20px 0px;
+  margin-bottom: 50px;
 
-  border-bottom: 0.5px solid $border-color;
+  border-bottom: 0.5px solid darken($header-color, 10%);
 
   a {
-    color: $link-color;
+    color: white;
     font-size: 14px;
 
     @include transition(color .25s);
@@ -144,10 +151,8 @@ article:last-child {
 .metadata {
   @include span-columns(6);
 
-  margin-top: 10px;
-  padding-top: 5px;
-
-  border-top: 0.5px solid $border-color;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .pagination {

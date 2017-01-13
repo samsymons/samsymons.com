@@ -6,6 +6,10 @@
       <h1 class="article-title"><%= link_to formatted_title(article.title), article %></h1>
     <% end %>
 
+    <span class="metadata">
+      <%= metadata_for_article(article) %>
+    </span>
+
     <% unless article.tags.nil? || article.tags.empty? %>
       <ul class="tags">
         <% article.tags.each do |tag| %>
@@ -16,8 +20,4 @@
   </div>
 
   <%= article.body %>
-
-  <span class="metadata">
-    <%= metadata_for_article(article) %>
-  </span>
 </article>
