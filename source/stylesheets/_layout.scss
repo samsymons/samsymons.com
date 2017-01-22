@@ -1,7 +1,8 @@
 /* General Layout: */
 
 html {
-  background-color: $background-color;
+  background-color: white;
+  background: linear-gradient(#F3F3F3, white 250px);
 
   font-size: 16px;
 
@@ -20,7 +21,6 @@ html {
 .background-content {
   width: 100%;
 
-  background-color: $header-color;
   margin-bottom: 50px;
 }
 
@@ -28,12 +28,10 @@ html {
 
 #main-header {
   padding: 20px 0px;
-  margin-bottom: 50px;
-
-  border-bottom: 0.5px solid darken($header-color, 10%);
+  margin-bottom: 30px;
 
   a {
-    color: white;
+    color: #aaa;
     font-size: 14px;
 
     @include transition(color .25s);
@@ -97,6 +95,10 @@ html {
 }
 
 /* Articles: */
+
+.katex-display {
+  margin: 30px 0px !important;
+}
 
 hr {
   display: block;
