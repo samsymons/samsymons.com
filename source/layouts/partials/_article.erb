@@ -9,15 +9,15 @@
     <span class="metadata">
       <%= metadata_for_article(article) %>
     </span>
-
-    <% unless article.tags.nil? || article.tags.empty? %>
-      <ul class="tags">
-        <% article.tags.each do |tag| %>
-          <%= markup_for_tag(tag) %>
-        <% end %>
-      </ul>
-    <% end %>
   </div>
 
   <%= article.body %>
+
+  <% unless article.tags.nil? || article.tags.empty? %>
+    <ul class="tags">
+      <% article.tags.each do |tag| %>
+        <%= markup_for_tag(tag) %>
+      <% end %>
+    </ul>
+  <% end %>
 </article>

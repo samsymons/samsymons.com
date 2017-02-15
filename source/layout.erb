@@ -29,35 +29,37 @@
     </script>
   </head>
   <body>
-    <div class="background-content">
-      <div class="content">
-        <header id="main-header">
-          <h1 id="main-title"><%= link_to "Sam Symons", '/' %></h1>
+    <div id="body-container">
+      <div class="background-content">
+        <div class="content">
+          <header id="main-header">
+            <h1 id="main-title"><%= link_to "Sam Symons", '/' %></h1>
 
-          <nav id="main-navigation">
-            <ul id="site-links">
-              <li><%= navigation_link_to 'Articles', '/' %></li>
-              <li><%= navigation_link_to 'Archive', '/archive/' %></li>
-              <li><%= navigation_link_to 'Projects', '/projects/' %></li>
-            </ul>
-          </nav>
-        </header>
+            <nav id="main-navigation">
+              <ul id="site-links">
+                <li><%= navigation_link_to 'Articles', '/' %></li>
+                <li><%= navigation_link_to 'Archive', '/archive/' %></li>
+                <li><%= navigation_link_to 'Projects', '/projects/' %></li>
+              </ul>
+            </nav>
+          </header>
+        </div>
       </div>
-    </div>
 
-    <div class="content">
-      <div id="inner-content">
-        <%= yield %>
+      <div class="content">
+        <div id="inner-content">
+          <%= yield %>
 
-        <footer>
-          <p id="footer-details">&copy; <%= Time.now.year %> Sam Symons.
-            <a href="https://github.com/samsymons">GitHub</a> &bull;
-            <a href="https://twitter.com/sam_symons">Twitter</a> &bull;
-            <a href="https://keybase.io/samsymons">Keybase</a>.
-            <br/>
-            Running on <a href="https://m.do.co/c/6b824f15292b">Digital Ocean</a>, with a little help from <a href="http://nginx.org">NGINX</a> and <a href="https://letsencrypt.org">Let's Encrypt</a>.
-          </p>
-        </footer>
+          <footer>
+            <p id="footer-details">&copy; <%= Time.now.year %> Sam Symons.
+              <a href="https://github.com/samsymons">GitHub</a> &bull;
+              <a href="https://twitter.com/sam_symons">Twitter</a> &bull;
+              <a href="https://keybase.io/samsymons">Keybase</a>.
+              <br/>
+              Running on <a href="https://m.do.co/c/6b824f15292b">Digital Ocean</a>, with a little help from <a href="http://nginx.org">NGINX</a> and <a href="https://letsencrypt.org">Let's Encrypt</a>.
+            </p>
+          </footer>
+        </div>
       </div>
     </div>
 
