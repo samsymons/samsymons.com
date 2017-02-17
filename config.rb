@@ -14,7 +14,7 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :rsync
-  deploy.host = '45.55.57.243'
+  deploy.host = '46.101.150.172'
   deploy.path = '/var/www/blog'
   deploy.user = 'deploy'
   deploy.flags = "-avz -e 'ssh -i /Users/samsymons/.ssh/digitalocean'"
