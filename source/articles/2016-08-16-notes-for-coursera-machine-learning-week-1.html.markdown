@@ -29,7 +29,7 @@ Here’s an example:
 
 Matrices are measured by their number of rows and columns. The matrix above would be a \\(2 \times 3\\) matrix. Likewise, a vector is just a \\(1 \times n\\) matrix (or \\(n \times 1\\) depending on whether you want a row or column vector).
 
-**Addition and Scalar Multiplication**
+#### Addition and Scalar Multiplication
 
 Vectors and matrices can be added and multiplied with scalars pretty easily. They can be added together if they have the same dimensions.
 
@@ -47,7 +47,7 @@ $$
 
 This works with multiplication as well. If you’re multiple a matrix by a scalar, you do it element-wise, taking each element and multiplying it individually. You want to be careful to mention whether you are multiplying element-wise with a matrix, because multiplying a matrix by a vector is a different thing entirely.
 
-**Matrix-Vector Multiplication**
+#### Matrix-Vector Multiplication
 
 Let’s start with multiplying a matrix with a vector. In order for this to work at all, your matrix needs to have the same number of columns as the vector has rows. You’ll see why in a second.
 
@@ -68,7 +68,7 @@ $$\begin{bmatrix} 16 \\cr 4 \\cr 7 \end{bmatrix}$$
 
 So our \\(3 \times 2\\) matrix multiplied by our \\(2 \times 1\\) vector gave us a new \\(3 \times 1\\) vector. This might make sense! Our matrix had three rows, and we are creating a new row for each row we calculate!
 
-**Matrix-Matrix Multiplication**
+#### Matrix-Matrix Multiplication
 
 So matrix-vector multiplication is easy enough. What about multiplying a matrix by *another matrix*? As it happens, this is pretty similar to matrix-vector multiplication, except that you’re effectively multiplying your matrix by \\(n\\) vectors. Perhaps an example would help.
 
@@ -106,7 +106,7 @@ It’s important to note that function we find won’t be perfect in all cases. 
 
 To start on this, we need a way to figure out how good our current equation is. Since the equation for a line is \\(y=mx + b\\) *(in this case, \\(y\\) is the selling price and \\(x\\) is the house size)*, we need to find \\(m\\) and \\(b\\) — to do that we have to start with a way to determine the accuracy of our current \\(m\\) and \\(b\\) values.
 
-**Hypothesis Function**
+#### Hypothesis Function
 
 So, we have a vector of training examples, and then a vector of \\(y\\) (target) values. We want the line \\(y=mx + b\\). Here, \\(m\\) is some constant which we use to multiply by our training value to get a line of best fit. \\(m\\) is in a vector called theta, or \\(\theta\\). All theta is is a vector of extra variables which we have to determine ourselves to get it to estimate the output correctly. Ideally, each of our training variables multiplied by its corresponding theta value will result in the corresponding \\(y\\) value.
 
@@ -125,7 +125,7 @@ $$
 
 So we have our function which sums up the our theta values multiplied by our x value, plus the y-intercept value, represented at \\(\theta_0\\) here.
 
-**Cost Function**
+#### Cost Function
 
 As mentioned, the goal is to get our hypothesis function to match the training examples as closely as possible. We do this by finding some way to choose \\(\theta_0\\) and \\(\theta_1\\) as well as possible. Our \\(h_\theta(x)\\) function should match the target \\(y\\) as closely as possible.  
 
@@ -149,11 +149,11 @@ $$
 J(\theta\_0, \theta\_1) = \frac{1}{2m} \sum\limits\_{i=1}^m (h\_\theta(x^{(i)}) - y^{(i)})^2
 $$
 
-We’re taking the sum and averaging it, with the \\(\frac{1}{2m}\\). Dividing a number by 2 is the same as multiplying it by the inverse of 2, which is \\(\frac{1}{2}\\). Since we have \\(m\\) examples, the inverse is \\(\frac{1}{m}\\). The fraction is then divided by 2 for reasons I'm not entirely sure of yet.
+We’re taking the sum and averaging it, with the \\(\frac{1}{2m}\\). Dividing a number by 2 is the same as multiplying it by the inverse of 2, which is \\(\frac{1}{2}\\). Since we have \\(m\\) examples, the inverse is \\(\frac{1}{m}\\).
 
 So we have our cost function. We pass in the values of theta that we have so far (remember, these are arbitrary and we’re changing them to find the best fit) and get back the *cost* of those values. The higher the cost, the worse our hypothesis is. If the cost is 0, then we nailed it.
 
-**Calculating the Hypothesis with Vectors**
+#### Calculating the Hypothesis with Vectors
 
 So if we have a vector of training variables, and then a vector of theta values, we want to calculate the dot product. However, If we have 3 training variables, then we need 3 theta values, *in addition to* the \\(\theta\_0\\) value. An easy way to get around this is to add an extra element of value \\(1\\) to our training examples. Then, when we calculate the dot product, \\(\theta\_0\\) will be multiplied by \\(1\\).
 
@@ -170,7 +170,7 @@ The idea of the gradient descent algorithm is this:
 
 So we have our two theta values to start with. What we do is we want to look at where we are with these theta values (that is, what our cost function outputs with these theta values) and see if we can make a step somewhere to *reduce* the output of the cost function. If there is a direction we can go to reduce the output, we take that step, and try again. Keep going until you can’t do any better!
 
-Here’s gradient descent, as written by people smarter than I am:
+Here’s gradient descent in its full glory:
 
 $$
 \theta\_j := \theta\_j - \alpha \frac{\partial}{\partial \theta\_j} J(\theta\_0, \theta\_1)
@@ -198,7 +198,7 @@ Well, for each one we want to calculate its value plus the square root of *both*
 
 When we want to find the derivative of a function, we have to look at see whether or not it takes more than one parameter. If we’re just dealing with one parameter, we take the derivative of that function and call it a day. However, in the case of the cost function, we never have just one parameter — there is always \\(\theta\_0\\) and then any other theta values. This is why we take the partial derivative — we care about the derivative for some \\(\theta\_j\\), and can ignore the other parameters.
 
-One other thing to thing about is what the derivative is when you’re already at the local minimum. When you’re at the lowest point available, the slope of that point is going to be \\(0\\) — one step of gradient descent is going to do nothing, so you’re done!
+One other thing to think about is what the derivative is when you’re already at the local minimum. When you’re at the lowest point available, the slope of that point is going to be \\(0\\) — one step of gradient descent is going to do nothing, so you’re done!
 
 ## Summary
 
