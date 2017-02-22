@@ -167,6 +167,7 @@ footer p, footer a {
 
   font-family: $sans-serif-font;
   font-size: 14px;
+  line-height: 25px;
 
   @include media($mobile) {
     font-size: 15px;
