@@ -1,3 +1,5 @@
+ignore 'fonts/548193/*'
+
 activate :blog do |blog|
   blog.layout = "article"
   blog.permalink = "blog/:title"
@@ -57,4 +59,15 @@ set :images_dir, 'images'
 
 configure :build do
   activate :minify_css
+end
+
+# Font Management
+
+after_build do |builder|
+  puts "Updating fonts"
+
+  src = File.join(config[:source],"fonts")
+  dst = File.join(config[:build_dir],"fonts")
+  builder.source_paths << File.dirname(__FILE__)
+  builder.directory(src, dst)
 end
