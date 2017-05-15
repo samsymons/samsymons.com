@@ -1,4 +1,4 @@
-$heading-font: "Fell Type A", "Fell Type B", "Noto Serif", serif;
+$heading-font: "Gotham SSm A", "Gotham SSm B", serif;
 $body-font: "Gotham SSm A", "Gotham SSm B", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $sans-serif-font: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -163,10 +163,10 @@ h1#category-title {
   color: $light-text-color;
 
   font-family: $heading-font;
-  font-size: 20px;
+  font-size: 16px;
 
   @include media($mobile) {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
