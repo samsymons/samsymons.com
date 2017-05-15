@@ -26,9 +26,14 @@ code {
   font-family: 'Source Code Pro', monospace, sans-serif;
 }
 
+#main-header li {
+  font-weight: 600;
+}
+
 #site-links li {
   font-family: $sans-serif-font;
   font-size: 16px;
+  text-color: $red;
 
   line-height: 25px;
 }
@@ -244,15 +249,16 @@ blockquote {
 #main-header a {
   border-bottom: none;
   font-size: 15px;
+  color: white;
 
   &:hover {
-    color: black;
+    color: $red;
   }
 }
 
 #main-header .active {
   font-weight: 600;
-  color: black;
+  color: $red;
 }
 
 footer a {
