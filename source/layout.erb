@@ -1,36 +1,33 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="initial-scale=1.0">
     <meta name="author" content="Sam Symons">
     <meta name="description" content="Hi, I'm Sam! I'm an iOS developer from New Zealand.">
-
     <meta http-equiv="Content-Security-Policy" content="default-src gap://ready file://* *; style-src 'self' http://* https://* 'unsafe-inline'; script-src 'self' http://* https://* 'unsafe-inline' 'unsafe-eval'; font-src 'self' https://* data:">
 
     <title><%= page_title %></title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
+    <!-- Load useful CSS -->
+    
     <%= stylesheet_link_tag 'all' %>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Source+Code+Pro" rel="stylesheet">
+    
+    <!-- Load custom fonts -->
     
     <% if development? %>
       <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6796156/6084172/css/fonts.css" />
     <% else %>
       <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6796156/6463372/css/fonts.css" />
     <% end %>
-
-    <script type="text/javascript">
-      $.bigfoot({
-        actionOriginalFN: "ignore"
-      });
-    </script>
   </head>
+  
   <body>
     <div id="body-container">
       <div id="header-container" class="background-content">
@@ -66,6 +63,8 @@
       </div>
     </div>
 
+    <!-- Track pageviews -->
+
     <% unless development? %>
       <script type="text/javascript">
         var _gauges = _gauges || [];
@@ -84,7 +83,20 @@
     <% end %>
 
     <%= javascript_include_tag 'highlight.min', 'bigfoot.min' %>
+    
+    <!-- Activate syntax highlighting -->
+    
     <script>hljs.initHighlightingOnLoad();</script>
+    
+    <!-- Activate Bigfoot -->
+    
+    <script type="text/javascript">
+      $.bigfoot({
+        actionOriginalFN: "ignore"
+      });
+    </script>
+    
+    <!-- Load KaTeX -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/contrib/auto-render.min.js"></script>

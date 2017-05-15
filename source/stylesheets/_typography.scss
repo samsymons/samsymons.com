@@ -10,15 +10,15 @@ p, li {
   margin-top: 0px;
 
   font-family: $body-font;
-  font-size: 17px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
 
   line-height: 1.7em;
 
   @include media($mobile) {
-    font-size: 15px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 1.5em;
   }
 }
 
@@ -56,13 +56,6 @@ article {
       font-size: 20px;
       margin-top: 35px;
     }
-  }
-
-  h4 {
-    margin-top: 40px;
-    display: block;
-    border-bottom: 1px solid $border-color;
-    font-size: 20px;
   }
 
   a {
@@ -186,7 +179,11 @@ footer p, footer a {
   font-family: $sans-serif-font;
 }
 
-h1, h2, h3 {
+#main-title {
+  font-family: $sans-serif-font;
+}
+
+h1, h2, h3, h4 {
   margin: 60px 0px 10px 0px;
 
   font-family: $heading-font;
@@ -198,12 +195,7 @@ h1 {
   font-size: 36px;
 }
 
-#main-title {
-  font-family: $sans-serif-font;
-}
-
 h2 {
-  @include clearfix;
   font-size: 30px;
 }
 
@@ -238,10 +230,10 @@ a {
 }
 
 blockquote {
-  margin: 25px 20px 0px 20px;
+  margin: 30px 0px;
   padding: 0px 10px;
 
-  border-left: 3px solid #eee;
+  border-left: 3px solid $red;
   color: $light-text-color;
 
   a {
@@ -260,12 +252,11 @@ blockquote {
 }
 
 #main-header .active {
-  font-weight: 600;
   color: $red;
 }
 
 footer a {
-  transition: color 0.15s linear;
+  transition: color 0.15s ease-out;
 
   &:hover {
     color: $text-color;
