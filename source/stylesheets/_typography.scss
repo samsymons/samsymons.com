@@ -1,5 +1,5 @@
 $heading-font: "Fell Type A", "Fell Type B", "Noto Serif", serif;
-$body-font: "Hoefler Text A", "Hoefler Text B", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font: "Gotham SSm A", "Gotham SSm B", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $sans-serif-font: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 body {
@@ -10,14 +10,14 @@ p, li {
   margin-top: 0px;
 
   font-family: $body-font;
-  font-size: 21px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
 
-  line-height: 1.5em;
+  line-height: 1.7em;
 
   @include media($mobile) {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 26px;
   }
 }
