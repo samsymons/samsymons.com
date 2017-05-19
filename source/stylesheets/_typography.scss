@@ -38,6 +38,20 @@ code {
   line-height: 25px;
 }
 
+#introduction {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+  
+  p {
+    font-family: "Hoefler Titling A", "Hoefler Titling B", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    
+    text-align: center;
+  }
+}
+
 article {
   color: $text-color;
 

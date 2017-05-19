@@ -6,6 +6,8 @@ tags: machine learning
 
 Some time ago, I started [Andrew Ng's Machine Learning course on Coursera](https://www.coursera.org/learn/machine-learning). I loved every bit of it, but I only got halfway through before I started a new job and it ended up falling by the wayside.
 
+READMORE
+
 Since time is more or less on my side again, I've since started going back through it from week 1 with a couple friends. We've been taking notes as we go, which I'll be polishing up and posting here!
 
 _These notes were written by myself and Rob Hemingray._

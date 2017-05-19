@@ -6,6 +6,8 @@ tags: data science, machine learning
 
 One of the most useful and interesting theorems in statistics is [Bayes' Theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem). I like it a lot because it can be used to solve interesting problems with very little effort — it boils down to one equation! I wanted to go over it and try to provide some intuition into how it works, and then why you would want to use it.
 
+READMORE
+
 ### Conditional Probability
 
 First, let's walk through some simple examples to get warmed up. What is the probability that a fair coin, when flipped, will result in heads? Easy enough: 50%!

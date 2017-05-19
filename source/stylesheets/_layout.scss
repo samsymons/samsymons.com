@@ -161,21 +161,6 @@ article:last-child {
   text-align: center;
 }
 
-.pagination {
-  @include clearfix;
-
-  display: block;
-  margin-top: 30px;
-
-  .next-page {
-    float: left;
-  }
-
-  .previous-page {
-    float: right;
-  }
-}
-
 .badged-header {
   @include clearfix;
 }

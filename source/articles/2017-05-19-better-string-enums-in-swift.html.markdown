@@ -6,6 +6,8 @@ tags: swift, objective-c
 
 Swift has a number of great features for improving the way it imports Objective-C code. With `NS_SWIFT_NAME` you can customize the name of functions imported into Swift, and nullability annotations let you work closer with Swift's optional system. These features are very useful and pretty well known, but one feature I don't see talked about as often, however, is `NS_STRING_ENUM`.
 
+READMORE
+
 `NS_STRING_ENUM` is a way of taking the usual string-based approach to providing API options and converting it into a much friendlier form. Let's take a look at some simple Objective-C code using string-based enums:
 
 ```

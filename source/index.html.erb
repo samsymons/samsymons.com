@@ -2,22 +2,14 @@
 pageable: true
 ---
 
+<div id="introduction">
+  <p>Hi, I'm Sam! I am an iOS developer with an interest in machine learning and computer graphics. Here, I write about my adventures in Swift and mathematics.</p>
+</div>
+
 <div id="articles">
-  <% page_articles.each_with_index do |current_article, i| %>
-    <%= partial('/layouts/partials/article', :locals => { :article => current_article }) %>
+  <% page_articles[0...5].each do |current_article| %>
+    <%= partial('/layouts/partials/article-preview', :locals => { :article => current_article }) %>
   <% end %>
 </div>
 
-<% if next_page or prev_page %>
-  <span class="pagination">
-    <% if paginate %>
-      <% if next_page %>
-        <%= link_to "&larr; Previous Page", next_page.url, class: 'next-page' %>
-      <% end %>
-
-      <% if prev_page %>
-        <%= link_to "Next Page &rarr;", prev_page.url, class: 'previous-page' %>
-      <% end %>
-    <% end %>
-  </span>
-<% end %>
+<li><%= navigation_link_to 'Previous articles', '/archive/' %></li>
