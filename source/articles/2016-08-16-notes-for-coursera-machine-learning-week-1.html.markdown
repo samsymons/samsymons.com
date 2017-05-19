@@ -127,7 +127,7 @@ So we have our function which sums up the our theta values multiplied by our x v
 
 #### Cost Function
 
-As mentioned, the goal is to get our hypothesis function to match the training examples as closely as possible. We do this by finding some way to choose \\(\theta_0\\) and \\(\theta_1\\) as well as possible. Our \\(h_\theta(x)\\) function should match the target \\(y\\) as closely as possible.  
+As mentioned, the goal is to get our hypothesis function to match the training examples as closely as possible. We do this by finding some way to choose \\(\theta\_0\\) and \\(\theta\_1\\) as well as possible. Our \\(h_\theta(x)\\) function should match the target \\(y\\) as closely as possible.  
 
 $$
 h_\theta (x) - y \approx 0
