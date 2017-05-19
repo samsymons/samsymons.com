@@ -1,5 +1,5 @@
-$heading-font: "Gotham SSm A", "Gotham SSm B", serif;
-$body-font: "Gotham SSm A", "Gotham SSm B", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font: "Gotham SSm A", "Gotham SSm B", sans-serif;
+$body-font:  "Hoefler Text A", "Hoefler Text B", serif;
 $sans-serif-font: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 body {
@@ -10,14 +10,14 @@ p, li {
   margin-top: 0px;
 
   font-family: $body-font;
-  font-size: 16px;
+  font-size: 19px;
   font-style: normal;
   font-weight: 400;
 
   line-height: 1.7em;
 
   @include grid-media($mobile) {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5em;
   }
 }
@@ -180,11 +180,12 @@ footer p, footer a {
 }
 
 #main-title {
+  font-weight: 600;
   font-family: $sans-serif-font;
 }
 
 h1, h2, h3, h4 {
-  margin: 60px 0px 10px 0px;
+  margin: 50px 0px 10px 0px;
 
   font-family: $heading-font;
   font-weight: 400;
@@ -220,9 +221,9 @@ p {
 
 a {
   text-decoration: none;
-  color: $link-color;
+  color: black;
 
-  border-bottom: 2px solid lighten($link-color, 40%);
+  border-bottom: 2px solid lighten($yellow, 40%);
 
   &:hover {
     border-bottom: 2px solid $link-color;
@@ -233,7 +234,7 @@ blockquote {
   margin: 30px 0px;
   padding: 0px 10px;
 
-  border-left: 3px solid $red;
+  border-left: 3px solid $yellow;
   color: $light-text-color;
 
   a {
@@ -244,15 +245,15 @@ blockquote {
 #main-header a {
   border-bottom: none;
   font-size: 15px;
-  color: white;
+  color: black;
 
   &:hover {
-    color: $red;
+    color: $yellow;
   }
 }
 
 #main-header .active {
-  color: $red;
+  color: $yellow;
 }
 
 footer a {
