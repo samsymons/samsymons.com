@@ -16,7 +16,7 @@ p, li {
 
   line-height: 1.7em;
 
-  @include media($mobile) {
+  @include grid-media($mobile) {
     font-size: 14px;
     line-height: 1.5em;
   }
@@ -52,7 +52,7 @@ article {
       border: 0;
     }
 
-    @include media($mobile) {
+    @include grid-media($mobile) {
       font-size: 20px;
       margin-top: 35px;
     }
@@ -76,7 +76,7 @@ article {
     font-size: 38px;
     text-align: center;
 
-    @include media($mobile) {
+    @include grid-media($mobile) {
       font-size: 24px;
     }
   }
@@ -118,7 +118,7 @@ article {
   .link {
     color: $light-text-color;
 
-    @include media($mobile) {
+    @include grid-media($mobile) {
       padding-bottom: 5px;
     }
   }
@@ -134,7 +134,7 @@ article {
     }
   }
 
-  @include media($mobile) {
+  @include grid-media($mobile) {
     font-size: 16px;
     line-height: 28px;
   }
@@ -158,7 +158,7 @@ h1#category-title {
   font-family: $heading-font;
   font-size: 16px;
 
-  @include media($mobile) {
+  @include grid-media($mobile) {
     font-size: 14px;
   }
 }
@@ -170,7 +170,7 @@ footer p, footer a {
   font-size: 14px;
   line-height: 25px;
 
-  @include media($mobile) {
+  @include grid-media($mobile) {
     font-size: 15px;
   }
 }

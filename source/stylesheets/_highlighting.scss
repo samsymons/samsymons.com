@@ -3,7 +3,7 @@ pre:not(.line-pre) {
   line-height: 20px;
   word-wrap: normal;
 
-  @include media($mobile) {
+  @include grid-media($mobile) {
     padding: 2px 6px;
   }
 }
@@ -18,7 +18,7 @@ code {
   font-size: 14px;
   line-height: 20px;
 
-  @include media($mobile) {
+  @include grid-media($mobile) {
     padding: 0 4px;
   }
 }

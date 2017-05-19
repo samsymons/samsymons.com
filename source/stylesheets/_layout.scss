@@ -20,8 +20,10 @@ html {
 }
 
 .content {
-  @include outer-container;
-
+  @include grid-container;
+  
+  max-width: 800px;
+  margin: auto;
   padding: 0px 20px;
 }
 
@@ -59,7 +61,7 @@ html {
     box-sizing: border-box;
   }
 
-  @include media($mobile) {
+  @include grid-media($mobile) {
     @include clearfix();
 
     margin-bottom: 10px;
@@ -87,7 +89,7 @@ html {
     }
   }
 
-  @include media($mobile) {
+  @include grid-media($mobile) {
     @include clearfix();
 
     text-align: left;
@@ -152,7 +154,7 @@ article:last-child {
 }
 
 .metadata {
-  @include span-columns(6);
+  @include grid-column(6);
 
   margin-bottom: 40px;
   text-align: center;
@@ -229,7 +231,7 @@ article:last-child {
   border-bottom: 1px solid #eee;
   padding: 30px 0 34px 0;
 
-  @include media($mobile) {
+  @include grid-media($mobile) {
     text-align: center;
   }
 
@@ -303,7 +305,7 @@ article:last-child {
     margin-right: 10px;
   }
 
-  @include media($mobile) {
+  @include grid-media($mobile) {
     margin-left: 10px;
     text-align: center;
   }
