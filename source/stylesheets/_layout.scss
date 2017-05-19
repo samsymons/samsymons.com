@@ -184,11 +184,15 @@ article:last-child {
 .year-header {
   margin-top: 0;
   margin-bottom: 20px;
-  padding-bottom: 4px;
-
+  padding-bottom: 7px;
   border-bottom: 0.5px solid $border-color;
 
-  line-height: 25px;
+  font-size: 30px;
+}
+
+.month-header {
+  font-size: 20px;
+  color: $yellow;
 }
 
 .month {

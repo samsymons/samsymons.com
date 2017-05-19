@@ -17,8 +17,8 @@ p, li {
   line-height: 1.7em;
 
   @include grid-media($mobile) {
-    font-size: 16px;
-    line-height: 1.5em;
+    font-size: 17px;
+    line-height: 1.6em;
   }
 }
 
@@ -50,6 +50,24 @@ code {
     
     text-align: center;
   }
+}
+
+#archive-link {
+    border-top: 1px solid #eee;
+    padding-top: 60px;
+    
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+    
+    text-align: center;
+    
+    a {
+      display: inline-block;
+      margin: auto;
+      font-size: 22px;
+      font-style: $sans-serif-font;
+    }
 }
 
 article {
@@ -91,7 +109,7 @@ article {
     text-align: center;
 
     @include grid-media($mobile) {
-      font-size: 24px;
+      font-size: 30px;
     }
   }
 
