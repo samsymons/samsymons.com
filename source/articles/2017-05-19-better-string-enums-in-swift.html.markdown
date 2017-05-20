@@ -4,7 +4,7 @@ date: 2017-05-19 04:40 UTC
 tags: swift, objective-c
 ---
 
-Swift has a number of great features for improving the way it imports Objective-C code. With `NS_SWIFT_NAME` you can customize the name of functions imported into Swift, and nullability annotations let you work closer with Swift's optional system. These features are very useful and pretty well known, but one feature I don't see talked about as often, however, is `NS_STRING_ENUM`.
+Swift has a number of great features for improving the way it imports Objective-C code. With `NS_SWIFT_NAME` you can customize the name of functions imported into Swift, and nullability annotations let you work closer with Swift's optional system. These features are very useful and pretty well known, but one feature I don't see talked about as often is `NS_STRING_ENUM`.
 
 READMORE
 
