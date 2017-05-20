@@ -67,6 +67,6 @@ end
 after_build do |builder|
   src = File.join(config[:source],"fonts")
   dst = File.join(config[:build_dir],"fonts")
-  builder.source_paths << File.dirname(__FILE__)
-  builder.directory(src, dst)
+  builder.thor.source_paths << File.dirname(__FILE__)
+  builder.thor.directory(src, dst)
 end
