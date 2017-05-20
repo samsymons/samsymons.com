@@ -91,7 +91,7 @@ article {
   }
 
   a {
-    transition: color .25s;
+    transition: color .15s;
 
     &:hover {
       color: $link-color;
@@ -255,7 +255,7 @@ a {
   text-decoration: none;
   color: black;
 
-  border-bottom: 2px solid lighten($yellow, 40%);
+  border-bottom: 2px solid lighten($yellow, 20%);
 
   &:hover {
     border-bottom: 2px solid $link-color;
