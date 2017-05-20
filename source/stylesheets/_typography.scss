@@ -91,7 +91,7 @@ article {
   }
 
   a {
-    @include transition(color .25s);
+    transition: color .25s;
 
     &:hover {
       color: $link-color;
@@ -119,7 +119,7 @@ article {
 
     line-height: 1.2em;
 
-    @include transition(color .3s);
+    transition: color .3s;
 
     &:hover {
       border-bottom: 0;
@@ -139,7 +139,7 @@ article {
 
     border: 1px solid $border-color;
 
-    @include transition(all .2s);
+    transition: color .2s;
 
     &:hover {
       border: 1px solid darken($border-color, 10%);
