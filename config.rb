@@ -15,7 +15,7 @@ activate :blog do |blog|
 end
 
 activate :deploy do |deploy|
-  deploy.method = :rsync
+  deploy.deploy_method = :rsync
   deploy.host = '46.101.150.172'
   deploy.path = '/var/www/blog'
   deploy.user = 'deploy'
@@ -25,6 +25,7 @@ activate :deploy do |deploy|
 end
 
 activate :directory_indexes
+activate :autoprefixer
 
 helpers do
   def metadata_for_article(article)
@@ -64,8 +65,6 @@ end
 # Font Management
 
 after_build do |builder|
-  puts "Updating fonts"
-
   src = File.join(config[:source],"fonts")
   dst = File.join(config[:build_dir],"fonts")
   builder.source_paths << File.dirname(__FILE__)
