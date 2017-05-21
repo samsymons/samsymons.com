@@ -45,8 +45,6 @@ html {
 
     transition: color .25s;
   }
-
-  // @include clearfix;
 }
 
 #main-title {
@@ -63,8 +61,6 @@ html {
   }
 
   @include grid-media($mobile) {
-    // @include clearfix();
-
     margin-bottom: 10px;
 
     a {
@@ -91,8 +87,6 @@ html {
   }
 
   @include grid-media($mobile) {
-    // @include clearfix();
-
     text-align: left;
     float: none;
   }
@@ -113,13 +107,12 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px dotted #ddd;
+  border-top: 1px dotted $border-color;
   margin: 1em 0;
   padding: 0; 
 }
 
 article {
-  // @include clearfix;
   margin-bottom: 70px;
 
   .tags {
@@ -160,10 +153,6 @@ article:last-child {
 
   margin-bottom: 30px;
   text-align: center;
-}
-
-.badged-header {
-  // @include clearfix;
 }
 
 /* Archive: */

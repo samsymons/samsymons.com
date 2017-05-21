@@ -1,4 +1,5 @@
 $heading-font: "Gotham SSm A", "Gotham SSm B", sans-serif;
+$title-font: "Hoefler Titling A", "Hoefler Titling B", sans-serif;
 $body-font:  "Hoefler Text A", "Hoefler Text B", serif;
 $sans-serif-font: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -44,7 +45,7 @@ code {
   margin-bottom: 60px;
   
   p {
-    font-family: "Hoefler Titling A", "Hoefler Titling B", sans-serif;
+    font-family: $title-font;
     font-weight: 600;
     font-size: 24px;
     
@@ -66,7 +67,7 @@ code {
       display: inline-block;
       margin: auto;
       font-size: 22px;
-      font-style: $sans-serif-font;
+      font-family: $sans-serif-font;
     }
 }
 
@@ -74,7 +75,7 @@ article {
   color: $text-color;
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: $heading-font;
+    font-family: $title-font;
     font-weight: 500;
 
     code {
@@ -102,10 +103,9 @@ article {
     display: block;
     margin-bottom: 5px;
     
-    font-family: "Hoefler Titling A", "Hoefler Titling B", sans-serif;
     font-weight: 600;
-
     font-size: 38px;
+    
     text-align: center;
 
     @include grid-media($mobile) {
@@ -178,10 +178,6 @@ h1#category-title {
   color: $link-color;
 
   font-size: 30px;
-}
-
-.metadata-separator {
-  margin: 0px 7px;
 }
 
 .metadata {
