@@ -5,7 +5,6 @@ gem 'nokogiri'
 
 gem 'middleman', '~> 4.2'
 gem 'middleman-blog', '~> 4.0'
-gem 'middleman-deploy', '2.0.0.pre.alpha'
 gem 'middleman-autoprefixer'
 
 gem 'redcarpet'

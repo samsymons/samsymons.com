@@ -14,16 +14,6 @@ activate :blog do |blog|
   blog.per_page = 5
 end
 
-activate :deploy do |deploy|
-  deploy.deploy_method = :rsync
-  deploy.host = '46.101.150.172'
-  deploy.path = '/var/www/blog'
-  deploy.user = 'deploy'
-  deploy.flags = "-avz -e 'ssh -i ~/.ssh/digitalocean'"
-  deploy.clean = true
-  deploy.build_before = true
-end
-
 activate :directory_indexes
 activate :autoprefixer
 
