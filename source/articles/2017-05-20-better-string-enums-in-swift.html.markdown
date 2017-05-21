@@ -1,6 +1,6 @@
 ---
 title: "Better String Enums in Swift"
-date: 2017-05-19 04:40 UTC
+date: 2017-05-20 04:40 UTC
 tags: swift, objective-c
 ---
 
