@@ -1,4 +1,4 @@
-ignore 'fonts/548193/*'
+ignore 'fonts/574515/*'
 
 activate :blog do |blog|
   blog.layout = "article"
