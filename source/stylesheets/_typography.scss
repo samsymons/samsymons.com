@@ -291,3 +291,9 @@ footer a {
     color: $text-color;
   }
 }
+
+// KaTeX Hacks:
+
+.katex .accent .accent-body.accent-vec > span {
+  left: 0em !important;
+}
