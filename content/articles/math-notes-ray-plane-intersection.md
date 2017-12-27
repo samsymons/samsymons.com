@@ -20,7 +20,7 @@ A ray is built atop vectors. It is a point in space, with a direction; think of 
 
 Here is the most basic implementation of a vector and ray in Rust:
 
-```rust
+{{< highlight rust>}}
 struct Vector3D {
     x: f32,
     y: f32,
@@ -31,7 +31,7 @@ struct Ray {
     origin: Vector3D,
     direction: Vector3D,
 }
-```
+{{< / highlight >}}
 
 Let's think of the ray's origin as \\(r_0\\), and its direction as \\(\vec{d}\\). We can find any point \\(p\\) along the ray:
 
@@ -43,12 +43,12 @@ Put more simply, any point along the ray can be found by starting at its origin 
 
 Before we get started here, we have to think about _how_ to define a plane in 3D space. We can create a plane with only two pieces of information: its center point in 3D space, and its _normal_. The normal is the direction vector which faces _away_ from an object, so for a plane that is facing directly upwards, the normal would be \\((0, 1, 0)\\).
 
-```rust
+{{< highlight rust>}}
 struct Plane {
     center: Vector3D,
     normal: Vector3D,
 }
-```
+{{< / highlight >}}
 
 Now our next question: given some point \\(p\\), how can we tell if it exists in the plane? We can use the dot product! It lets us determine if two vectors are orthogonal, so if we have a point on the plane, a vector from the plane's center to that point must be orthogonal to the plane's normal. If the point \\(p\\) exists in the plane, then this equality must hold:
 
@@ -92,7 +92,7 @@ We have to be wary about the denominator here — if the ray's direction and the
 
 With the pieces in place, we can write an intersection function:
 
-```rust
+{{< highlight rust>}}
 impl Plane {
     fn intersect(&self, ray: Ray) -> Option<f32> {
         let denominator = dot(self.normal, ray.direction);
@@ -112,11 +112,11 @@ impl Plane {
         return None
     }
 }
-```
+{{< / highlight >}}
 
 We'd better test this out to make sure it works as advertised.
 
-```rust
+{{< highlight rust>}}
 let plane = Plane { center: Vector3D::new(0.0, 0.0, 0.0), normal: Vector3D::new(0.0, 1.0, 0.0) };
 
 // Test that a ray pointed the wrong way does not intersect. This ray sits
@@ -135,6 +135,6 @@ let hitting_ray = Ray { origin: Vector3D::new(0.0, 3.0, 0.0), direction: Vector3
 let hit_result = plane.intersect(&hitting_ray);
 
 println!("Hit result: {:?}", hit_result); // Hit result: Some(3)
-```
+{{< / highlight >}}
 
 With that, ray-plane intersection is working. In the next article, we can cover sphere intersections before moving onto triangles and more complex objects.

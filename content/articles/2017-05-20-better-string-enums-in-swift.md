@@ -10,7 +10,7 @@ Swift has a number of great features for improving the way it imports Objective-
 
 `NS_STRING_ENUM` is a way of taking the usual string-based approach to providing API options and converting it into a much friendlier form. Let's take a look at some simple Objective-C code using string-based enums:
 
-```
+```objective-c
 #import <Foundation/Foundation.h>
 
 typedef NSString *AnimationDirection NS_STRING_ENUM;
@@ -25,7 +25,7 @@ Notice that `AnimationDirection` has an `NS_STRING_ENUM` annotation — this is
 
 With that in an Objective-C header, which is then imported into Swift via a bridging header, you can start writing Swift code in a much cleaner way:
 
-```
+```swift
 func performAnimation(direction: AnimationDirection) {
   // Animate something
 }
@@ -33,7 +33,7 @@ func performAnimation(direction: AnimationDirection) {
 
 After that, you can call the API as you would expect:
 
-```
+```swift
 performAnimation(direction: .down)
 ```
 
@@ -41,7 +41,7 @@ performAnimation(direction: .down)
 
 Swift imports the `NS_STRING_ENUM` constants as a struct with static properties for its options, in a format similar to this (according to [the Swift and Objective-C interoperability guide](https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/InteractingWithCAPIs.html)):
 
-```
+```swift
 struct AnimationDirection: RawRepresentable {
     typealias RawValue = String
 

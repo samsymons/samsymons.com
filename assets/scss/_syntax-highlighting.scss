@@ -43,13 +43,13 @@ pre code {
 }
 
 /* Background */ .chroma {
-  background-color: #eeeeee;
+  background-color: #FBFBFB;
   border-radius: 4px;
 }
 /* Error */ .chroma .err { color: #aa0000; background-color: #ffaaaa }
 /* LineTableTD */ .chroma .lntd { ; vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { ; border-spacing: 0; padding: 0; margin: 0; border: 0; width: 100%; overflow: auto; display: block; }
-/* LineHighlight */ .chroma .hl { background-color: #ffffcc; display: block; width: 100% }
+/* LineHighlight */ .chroma .hl { background-color: #F5F5F5; display: block; width: 100% }
 /* LineNumbersTable */ .chroma .lnt { ; margin-right: 0.4em; padding: 0 0.4em 0 0.4em; display: block; }
 /* LineNumbers */ .chroma .ln { ; margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
 /* Keyword */ .chroma .k { color: #006699; font-weight: bold }
@@ -61,7 +61,7 @@ pre code {
 /* KeywordType */ .chroma .kt { color: #007788; font-weight: bold }
 /* NameAttribute */ .chroma .na { color: #330099 }
 /* NameBuiltin */ .chroma .nb { color: #336666 }
-/* NameClass */ .chroma .nc { color: #00aa88; font-weight: bold }
+/* NameClass */ .chroma .nc { color: #00aa88 }
 /* NameConstant */ .chroma .no { color: #336600 }
 /* NameDecorator */ .chroma .nd { color: #9999ff }
 /* NameEntity */ .chroma .ni { color: #999999; font-weight: bold }

@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<h1 id="category-title">{{ .Title }}</h1>
+
+<ul class="year">
+{{ range .Data.Pages.GroupByDate "2006" }}
+<li>
+  <h2 class="year-header">{{ .Key }}</h2>
+    {{ range .Pages.GroupByDate "January" }}
+    <ul class="month">
+      <h3 class="month-header">{{ .Key }}</h3>
+
+      {{ range .Pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a> {{ if .Params.link }}&rarr;{{ end }}<li>
+      {{ end }}
+    </ul>
+    {{ end }}
+</li>
+{{ end }}
+</ul>
+
+{{ end }}
