@@ -1,2 +1,8 @@
 baseURL = "https://samsymons.com/"
 title = "Sam Symons"
+
+[[menu.main]]
+  name = "Archive"
+  identifier = "archive"
+  url = "/archive/"
+  weight = 1
