@@ -1,7 +1,7 @@
 ---
 title: Software Security Course Review
 date: "2015-04-13"
-tags: security, course
+tags: [ "security" ]
 ---
 
 As a follow up to the [crypto course from earlier this year][1], I enrolled in the [software security course from the University of Maryland][2] for something a bit more hands-on.

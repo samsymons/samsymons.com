@@ -1,7 +1,7 @@
 ---
 title: "Low-Level Software Security"
 date: "2015-03-15"
-tags: security
+tags: [ "security" ]
 link: https://www.youtube.com/watch?v=ZLZkf8FVcsU
 ---
 

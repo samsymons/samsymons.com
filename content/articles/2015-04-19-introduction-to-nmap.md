@@ -1,7 +1,7 @@
 ---
 title: Introduction to Nmap
 date: "2015-04-19"
-tags: nmap
+tags: [ "nmap" ]
 ---
 
 Nmap is one of my favorite tools. It gives you an easy way to discover the machines available on a network, and determine the services that each one is running. However, networks are complicated – this is reflected in the sheer number of options which Nmap provides (running `nmap` with no arguments outputs over 110 lines of available flags).

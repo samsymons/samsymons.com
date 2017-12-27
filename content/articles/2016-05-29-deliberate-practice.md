@@ -1,7 +1,7 @@
 ---
 title: Deliberate Practice
 date: "2016-05-29"
-tags: productivity
+tags: [ "productivity" ]
 ---
 
 _[Peak: Secrets from the New Science of Expertise](http://amzn.com/0544456238)_ is a book studying _deliberate practice_, the act of pushing yourself to learn more about a subject while constantly reviewing your progress and applying feedback.

@@ -1,7 +1,7 @@
 ---
 title: Inspecting Binaries with Hexdump
 date: "2015-04-20"
-tags: assembly, hexdump
+tags: [ "assembly", "hexdump" ]
 ---
 
 Lately I've been working on an 8080 emulator in Swift. The process of having to take a binary apart and figure out which byte is associated with which instruction has gotten me interested in programs and how they work under the hood.

@@ -1,7 +1,7 @@
 ---
 title: Seeing Circles, Sines, And Signals
 date: "2015-03-04"
-tags: math
+tags: [ "math" ]
 link: http://jackschaedler.github.io/circles-sines-signals/
 ---
 

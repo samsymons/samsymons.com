@@ -1,7 +1,7 @@
 ---
 title: Introduction to find
 date: "2015-02-17"
-tags: unix, tutorial
+tags: [ "unix", "tutorial" ]
 ---
 
 Of the various Unix utilities I use semi-regularly, `find` is the one that has me reaching for its documentation the most often. Every time I do, it's a reminder of how powerful it can be, if you can just remember how to use it.

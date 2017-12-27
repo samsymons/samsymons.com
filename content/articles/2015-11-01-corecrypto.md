@@ -1,7 +1,7 @@
 ---
 title: corecrypto
 date: "2015-11-01"
-tags: cryptography
+tags: [ "cryptography" ]
 link: https://developer.apple.com/cryptography/
 ---
 

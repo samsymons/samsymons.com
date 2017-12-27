@@ -2,7 +2,7 @@
 
 title: Understanding Objective-C Modules
 date: "2017-08-03"
-tags: Objective-C, iOS
+tags: [ "objective-c", "iOS" ]
 
 ---
 

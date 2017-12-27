@@ -1,7 +1,7 @@
 ---
 title: Disabling GCC's Overflow Protection on OS X
 date: "2015-03-01"
-tags: gcc, security
+tags: [ "gcc", "security" ]
 ---
 
 Earlier, I was playing with some code from [Jon Erickson's book][1] which exploited stack overflow bugs, on an older Linux system. When it came time to bring that code over to OS X though, the overflow protection would kill the process before it got a chance to do anything nasty.

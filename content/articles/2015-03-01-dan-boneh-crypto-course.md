@@ -1,7 +1,7 @@
 ---
 title: Dan Boneh's Crypto Course
 date: "2015-03-01"
-tags: course, cryptography
+tags: [ "cryptography" ]
 ---
 
 Inspired by [Ole Begemann's review of the Programming Languages course][1], I wanted to write about my experience with [Dan Boneh's Cryptography course][2] on Coursera.

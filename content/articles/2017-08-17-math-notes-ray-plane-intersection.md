@@ -2,7 +2,7 @@
 
 title: "Math Notes: Ray-Plane Intersection"
 date: "2017-08-17"
-tags: math, ray tracing, graphics, rust
+tags: [ "math", "ray tracing", "graphics", "rust" ]
 
 ---
 

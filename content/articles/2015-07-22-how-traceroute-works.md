@@ -1,7 +1,7 @@
 ---
 title: How Traceroute Works
 date: "2015-07-22"
-tags: networking
+tags: [ "networking" ]
 ---
 
 After taking Stanford's [introductory networking course][1] earlier this year, I decided it would be fun exercise to put some of that knowledge into practice and go about recreating traceroute in Rust. Traceroute is a neat little program; it ties together a bunch of networking protocols in a relatively simple way, making for a good test of a language's networking APIs.
