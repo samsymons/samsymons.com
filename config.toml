@@ -1,5 +1,6 @@
 baseURL = "https://samsymons.com/"
 title = "Sam Symons"
+disableKinds = ["taxonomyTerm"]
 
 pygmentsUseClasses = true
 pygmentsCodeFences = true

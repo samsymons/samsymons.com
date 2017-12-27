@@ -17,7 +17,7 @@
   {{- if .Params.tags }}
   <ul class="tags">
   {{- range .Params.tags }}
-    <li class='tag'><a href='{{ "/" | relURL }}tags/{{ . | urlize }}/'>{{ . }}</a></li>
+    <li class='tag'><a href='{{ "/" | relURL }}tags/{{ . | urlize }}/'>{{ . | upper }}</a></li>
   {{- end }}
   </ul>
   {{- end }}
