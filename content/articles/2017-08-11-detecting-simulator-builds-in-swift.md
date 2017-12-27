@@ -10,7 +10,7 @@ When developing a Swift app, you will occasionally find yourself wanting to incl
 
 This difference often catches people out who have come from Objective-C and are used to using all of the familiar C macros. Let's cover the right approach for each language.
 
-READMORE
+<!--more-->
 
 ### The Objective-C Approach
 

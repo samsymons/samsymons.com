@@ -1,0 +1,17 @@
+<head>
+  <title>{{ .Title }}</title>
+
+  {{ partial "meta.html" . }}
+
+  <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "main.css" }}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Source+Code+Pro" rel="stylesheet">
+
+  <!-- Load custom fonts -->
+
+  {{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6796156/6084172/css/fonts.css" />
+  {{ else }}
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6796156/6463372/css/fonts.css" />
+  {{ end }}
+</head>

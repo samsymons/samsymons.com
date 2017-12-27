@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div id="introduction">
+  <p>Hi, I'm Sam! I am an iOS developer with an interest in machine learning and computer graphics. Here, I write about my adventures in Swift and mathematics.</p>
+</div>
+
+<div id="articles">
+  {{ range first 5 .Data.Pages }}
+  {{ if eq .Type "articles" }}
+
+  <article class="article-preview">
+    <div class="article-header">
+      {{ if .Params.link }}
+      <h1 class="article-title link"><a href="{{ .Params.link }}">{{ .Title }}</a> &rarr;</h1>
+      {{ else }}
+      <h1 class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+      {{ end }}
+
+      <span class="metadata">
+        <time>Published {{ dateFormat "January 2, 2006" .Date }}</time>
+      </span>
+    </div>
+
+    <p>{{ .Summary }}</p>
+  </article>
+
+  {{ end }}
+  {{ end }}
+</div>
+
+<span id="archive-link"><a href="{{ "/archive" | relURL }}">Looking for more? Check out the archive!</a></span>
+{{ end }}

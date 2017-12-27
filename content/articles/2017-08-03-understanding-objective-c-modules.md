@@ -8,7 +8,7 @@ tags: Objective-C, iOS
 
 A few years back, the idea of Objective-C modules was introduced to LLVM. They were developed as a solution to the problems associated with the traditional `#include` and `#import` mechanisms.
 
-READMORE
+<!--more-->
 
 Since then, modules have crept their way into the Xcode developer ecosystem, becoming even more prevalent with the introduction of Swift. Tools like CocoaPods will even handle module maps for you, if you are installing frameworks to your app — this is why you can set `use_frameworks!` and start importing your Objective-C frameworks just like you would with your Swift ones.
 

@@ -8,7 +8,7 @@ tags: math, ray tracing, graphics, rust
 
 As part of working on ray tracing recently, I spent some time brushing up on how to calculate intersections between rays and different types of 3D objects. In preparation for blogging about actually _creating_ a ray tracer, I thought it would be nice to spend some time covering some of the math.
 
-READMORE
+<!--more-->
 
 ## Vectors & Rays
 

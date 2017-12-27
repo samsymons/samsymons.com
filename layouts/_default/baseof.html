@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "head.html" . }}
+
+<body>
+  <div id="body-container">
+    {{ partial "header.html" . }}
+
+    <div class="content">
+      <div id="inner-content">
+        {{ block "main" . }}
+        {{ end }}
+
+        {{ partial "footer.html" . }}
+      </div>
+    </div>
+  </div>
+
+  {{ partial "scripts.html" . }}
+</body>
+<html>
