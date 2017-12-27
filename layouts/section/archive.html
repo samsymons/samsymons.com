@@ -1,20 +1,18 @@
 {{ define "main" }}
-{{ $paginator := .Paginate ((where .Site.Pages "Kind" "page").GroupByDate "2006-01") -}}
-<section class="archives">
-  <ul>
-    {{- range $paginator.PageGroups }}
-    <li class="archives-month">{{ .Key }}</li>
-    <li class="archives-monthly-container">
-      {{- range .Pages }}
-      <ul>
-        <li class="archives-item">
-          <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
-          <time>{{ .Date.Format (default "January 2, 2006" $.Site.Params.dateFormat) }}</time>
-        </li>
-      </ul>
-      {{- end }}
-    </li>
-    {{- end }}
-  </ul>
-</section>
+<ul class="year">
+{{ range (where .Site.Pages "Kind" "page").GroupByDate "2006" }}
+<li>
+  <h2 class="year-header">{{ .Key }}</h2>
+    {{ range .Pages.GroupByDate "January" }}
+    <ul class="month">
+      <h3 class="month-header">{{ .Key }}</h3>
+
+      {{ range .Pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a> {{ if .Params.link }}&rarr;{{ end }}<li>
+      {{ end }}
+    </ul>
+    {{ end }}
+</li>
+{{ end }}
+</ul>
 {{ end }}
