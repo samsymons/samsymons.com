@@ -1,6 +1,8 @@
 baseURL = "https://samsymons.com/"
 title = "Sam Symons"
 
+pygmentsUseClasses = true
+
 [[menu.main]]
   name = "Archive"
   identifier = "archive"
