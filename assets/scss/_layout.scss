@@ -22,7 +22,7 @@ html {
 
 .content {
   @include grid-container;
-  
+
   max-width: 800px;
   margin: auto;
   padding: 0px 20px;
@@ -109,7 +109,7 @@ hr {
   border: 0;
   border-top: 1px dotted $border-color;
   margin: 1em 0;
-  padding: 0; 
+  padding: 0;
 }
 
 article {
@@ -292,6 +292,7 @@ article:last-child {
 
 footer {
   margin-top: 45px;
+  margin-bottom: 45px;
 
   a {
     margin: 0px 3px;
