@@ -1,6 +1,6 @@
 ---
 title: A Reverse Engineering Reading List
-date: 2015-05-13 03:31 UTC
+date: "2015-05-13"
 tags: reverse engineering
 ---
 

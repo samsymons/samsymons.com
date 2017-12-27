@@ -1,6 +1,6 @@
 ---
 title: Rendering Math with KaTeX
-date: 2016-08-06 19:49 UTC
+date: "2016-08-06"
 tags: math
 ---
 

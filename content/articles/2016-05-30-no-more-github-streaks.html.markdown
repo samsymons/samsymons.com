@@ -1,6 +1,6 @@
 ---
 title: No More GitHub Streaks
-date: 2016-05-30 04:23 UTC
+date: "2016-05-30"
 link: https://github.com/blog/2173-more-contributions-on-your-profile
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: NASM Tutorial
-date: 2015-03-15 23:24 UTC
+date: "2015-03-15"
 tags: assembly, nasm
 link: http://cs.lmu.edu/~ray/notes/nasmtutorial/
 ---

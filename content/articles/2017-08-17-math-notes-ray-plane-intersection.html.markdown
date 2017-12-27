@@ -1,7 +1,7 @@
 ---
 
 title: "Math Notes: Ray-Plane Intersection"
-date: 2017-08-17 20:50 UTC
+date: "2017-08-17"
 tags: math, ray tracing, graphics, rust
 
 ---
@@ -96,19 +96,19 @@ With the pieces in place, we can write an intersection function:
 impl Plane {
     fn intersect(&self, ray: Ray) -> Option<f32> {
         let denominator = dot(self.normal, ray.direction);
-        
+
         // 0.0001 is an arbitrary epsilon value. We just want
         // to avoid working with intersections that are almost
         // orthogonal.
         if denominator.abs() > 0.0001 {
             let difference = self.center - ray.origin;
             let t = dot(difference, self.normal) / denominator;
-            
+
             if t > 0.0001 {
                 return Some(t);
             }
         }
-        
+
         return None
     }
 }
@@ -118,22 +118,22 @@ We'd better test this out to make sure it works as advertised.
 
 ```rust
 let plane = Plane { center: Vector3D::new(0.0, 0.0, 0.0), normal: Vector3D::new(0.0, 1.0, 0.0) };
-    
+
 // Test that a ray pointed the wrong way does not intersect. This ray sits
 // above the plane and points in the opposite direction.
-    
+
 let missed_ray = Ray { origin: Vector3D::new(0.0, 3.0, 0.0), direction: Vector3D::new(0.0, 1.0, 0.0) };
 let miss_result = plane.intersect(&missed_ray);
-    
+
 println!("Miss result: {:?}", miss_result); // Miss result: None
-    
+
 // Test that a ray pointing at the plane will intersect. This ray sits 3
 // points above the plane and points directly down — if all goes well, the t value
 // will equal 3.
-    
+
 let hitting_ray = Ray { origin: Vector3D::new(0.0, 3.0, 0.0), direction: Vector3D::new(0.0, -1.0, 0.0) };
 let hit_result = plane.intersect(&hitting_ray);
-    
+
 println!("Hit result: {:?}", hit_result); // Hit result: Some(3)
 ```
 

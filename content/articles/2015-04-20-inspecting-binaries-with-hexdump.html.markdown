@@ -1,6 +1,6 @@
 ---
 title: Inspecting Binaries with Hexdump
-date: 2015-04-20 02:21 UTC
+date: "2015-04-20"
 tags: assembly, hexdump
 ---
 

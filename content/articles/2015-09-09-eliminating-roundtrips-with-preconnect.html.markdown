@@ -1,6 +1,6 @@
 ---
 title: Eliminating Roundtrips with Preconnect
-date: 2015-09-09 16:09 UTC
+date: "2015-09-09"
 link: https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Reverse Engineering With Radare2, Part 1
-date: 2015-07-05 08:00 UTC
+date: "2015-07-05"
 tags: radare, reverse engineering
 ---
 
@@ -135,7 +135,7 @@ Although these challenges were pretty simple, this is a solid starting point. Th
     Disassembling is the process of taking the raw bytes of a binary and translating them back into assembly language. There are even programs (known as decompilers) which convert assembly into pseudo-C. If you've ever read nested switch statements in assembly, you'll appreciate that.
     <a href="#fnref:1" title="return to article"> ↩</a></span>
     </li>
-    
+
     <li class="footnote" id="fn:2"><span>
     In assembly, arguments are supplied to functions depending on the calling convention of the operating system, also known as the ABI (Application Binary Interface). These binaries use the cdecl calling convention, which is usually the default for C compilers.
     <a href="#fnref:2" title="return to article"> ↩</a></span>

@@ -1,6 +1,6 @@
 ---
 title: Software Security Course Review
-date: 2015-04-13 16:12 UTC
+date: "2015-04-13"
 tags: security, course
 ---
 

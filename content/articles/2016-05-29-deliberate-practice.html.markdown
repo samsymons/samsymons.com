@@ -1,6 +1,6 @@
 ---
 title: Deliberate Practice
-date: 2016-05-29 09:00 UTC
+date: "2016-05-29"
 tags: productivity
 ---
 

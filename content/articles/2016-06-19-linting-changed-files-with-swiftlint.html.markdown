@@ -1,6 +1,6 @@
 ---
 title: Linting Changed Files With SwiftLint
-date: 2016-06-19 02:35 UTC
+date: "2016-06-19"
 tags: swift
 ---
 
@@ -34,4 +34,4 @@ else
 fi
 ```
 
-This uses `git` to get the file names of the changed files and check that they’re Swift source files. If so, they get run through `swiftlint` and any warnings are sent to Xcode. Now you can still get warnings for files you’re working on, without the Issues navigator becoming too crowded. 
+This uses `git` to get the file names of the changed files and check that they’re Swift source files. If so, they get run through `swiftlint` and any warnings are sent to Xcode. Now you can still get warnings for files you’re working on, without the Issues navigator becoming too crowded.

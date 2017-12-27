@@ -1,6 +1,6 @@
 ---
 title: "Bayes' Theorem"
-date: 2016-08-10 14:14 UTC
+date: "2016-08-10"
 tags: data science, machine learning
 ---
 
@@ -45,7 +45,7 @@ Given I have a red marble, this equation is the chance of the bag it came from b
 
 ### Bayes' Theorem
 
-Everything is fine. Let's just work through this marble example, and see how far we can get. We want to know the odds of us picking bag 1, knowing that the marble we have in our hands is red. To even think about picking a marble, we had to choose a bag at random. There are two bags, and each is just as likely to be selected, so there is a 50% chance of getting bag 1: \\(P(Bag1) = 0.5\\). 
+Everything is fine. Let's just work through this marble example, and see how far we can get. We want to know the odds of us picking bag 1, knowing that the marble we have in our hands is red. To even think about picking a marble, we had to choose a bag at random. There are two bags, and each is just as likely to be selected, so there is a 50% chance of getting bag 1: \\(P(Bag1) = 0.5\\).
 
 From here, each bag has a different probability of picking a red marble, since there are different numbers of red marbles in each. We care about bag 1 right now, so as mentioned earlier, \\(P(Red|Bag 1) = 0.75\\). So far we have this:
 

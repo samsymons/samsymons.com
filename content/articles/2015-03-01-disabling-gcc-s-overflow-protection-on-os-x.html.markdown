@@ -1,6 +1,6 @@
 ---
 title: Disabling GCC's Overflow Protection on OS X
-date: 2015-03-01 23:09 UTC
+date: "2015-03-01"
 tags: gcc, security
 ---
 

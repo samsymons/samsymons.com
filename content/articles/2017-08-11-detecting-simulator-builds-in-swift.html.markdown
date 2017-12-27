@@ -1,7 +1,7 @@
 ---
 
 title: Detecting Simulator Builds in Swift
-date: 2017-08-11 23:38 UTC
+date: "2017-08-11"
 tags: swift
 
 ---

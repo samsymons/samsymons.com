@@ -1,6 +1,6 @@
 ---
 title: Conference Videos for Objective-C Developers
-date: 2013-12-14 12:00 UTC
+date: "2013-12-14"
 tags: conference, objective-c
 ---
 

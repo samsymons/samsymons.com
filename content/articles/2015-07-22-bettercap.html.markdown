@@ -1,6 +1,6 @@
 ---
 title: BetterCap
-date: 2015-07-22 23:32 UTC
+date: "2015-07-22"
 tags:
 link: https://github.com/evilsocket/bettercap
 ---

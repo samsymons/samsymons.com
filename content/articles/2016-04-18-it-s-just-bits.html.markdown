@@ -1,6 +1,6 @@
 ---
 title: It's Just Bits
-date: 2016-04-18 02:03 UTC
+date: "2016-04-18"
 link: http://blog.appliedcompscilab.com/its_just_bits/index.html
 ---
 

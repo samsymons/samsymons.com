@@ -1,6 +1,6 @@
 ---
 title: Introduction to Nmap
-date: 2015-04-19 22:57 UTC
+date: "2015-04-19"
 tags: nmap
 ---
 
@@ -11,7 +11,7 @@ Nmap is one of my favorite tools. It gives you an easy way to discover the machi
 The simplest way to use Nmap is to give it an address to scan. Here's the output of scanning an instance of [Metasploitable][1] running locally in Virtualbox:
 
 	› nmap 192.168.1.79
-	
+
 	Starting Nmap 6.47 ( http://nmap.org ) at 2015-04-19 16:03 PDT
 	Nmap scan report for 192.168.1.79
 	Host is up (0.0018s latency).
@@ -41,7 +41,7 @@ The simplest way to use Nmap is to give it an address to scan. Here's the output
 	8009/tcp  open  ajp13
 	8180/tcp  open  unknown
 	49167/tcp open  unknown
-	
+
 	Nmap done: 1 IP address (1 host up) scanned in 1.25 seconds
 
 Without even passing any arguments, Nmap spits out some useful output. By default, Nmap scans what it calls the *top ports*, a number which changes based on the version but is usually around \~1500. There are a couple ways to get finer control over the ports scanned.
@@ -53,7 +53,7 @@ Without even passing any arguments, Nmap spits out some useful output. By defaul
 Often, you don't have a particular IP in mind when you're looking to scan something. Nmap can scan a range of IP addresses and display those which were successfully reached. Here's how to run a ping scan on your local network (the actual scanning of ports won't happen this way):
 
 	› nmap -sP 192.168.1.\*
-	
+
 	Starting Nmap 6.47 ( http://nmap.org ) at 2015-04-19 16:11 PDT
 	Nmap scan report for 192.168.1.64
 	Host is up (0.12s latency).

@@ -1,7 +1,7 @@
 ---
 
 title: Understanding Objective-C Modules
-date: 2017-08-03 16:59 UTC
+date: "2017-08-03"
 tags: Objective-C, iOS
 
 ---

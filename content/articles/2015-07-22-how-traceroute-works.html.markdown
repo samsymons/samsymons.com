@@ -1,6 +1,6 @@
 ---
 title: How Traceroute Works
-date: 2015-07-22 00:30 UTC
+date: "2015-07-22"
 tags: networking
 ---
 
@@ -61,20 +61,20 @@ This isn't meant to be a complete introduction to Wireshark, so you may want to 
 To capture data with tshark, you need two things: a network interface, and root privileges. To start, I'm going to look up the IP address for `samsymons.com` using `dig samsymons.com`. Because this website has multiple A records, I want to find out one of its IP addresses to use ahead of time, so it can be used as a capture filter when reading packets.
 
 	› dig samsymons.com
-	
+
 	; <<>> DiG 9.8.3-P1 <<>> samsymons.com
 	;; global options: +cmd
 	;; Got answer:
 	;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 13652
 	;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
-	
+
 	;; QUESTION SECTION:
 	;samsymons.com.                 IN      A
-	
+
 	;; ANSWER SECTION:
 	samsymons.com.          300     IN      A       104.28.22.206
 	samsymons.com.          300     IN      A       104.28.23.206
-	
+
 	;; Query time: 54 msec
 	;; SERVER: 192.168.1.254#53(192.168.1.254)
 	;; WHEN: Wed Jul 22 15:29:48 2015
@@ -104,28 +104,28 @@ After running traceroute, here's what was printed:
 	4       0.003100000     192.168.1.254   192.168.1.78    ICMP    64      Time-to-live exceeded (Time to live exceeded in transit)
 	5       0.003234000     192.168.1.78    104.28.22.206   UDP     1       Source port: 45462  Destination port: 33437
 	6       0.004227000     192.168.1.254   192.168.1.78    ICMP    64      Time-to-live exceeded (Time to live exceeded in transit)
-	
+
 	7       0.004378000     192.168.1.78    104.28.22.206   UDP     2       Source port: 45462  Destination port: 33438
 	8       0.122021000     10.29.242.1     192.168.1.78    ICMP    63      Time-to-live exceeded (Time to live exceeded in transit)
 	9       0.123096000     192.168.1.78    104.28.22.206   UDP     2       Source port: 45462  Destination port: 33439
 	10      0.224505000     10.29.242.1     192.168.1.78    ICMP    63      Time-to-live exceeded (Time to live exceeded in transit)
 	11      0.224687000     192.168.1.78    104.28.22.206   UDP     2       Source port: 45462  Destination port: 33440
 	12      0.328691000     10.29.242.1     192.168.1.78    ICMP    63      Time-to-live exceeded (Time to live exceeded in transit)
-	
+
 	13      0.328855000     192.168.1.78    104.28.22.206   UDP     3       Source port: 45462  Destination port: 33441
 	14      0.484253000     75.154.223.211  192.168.1.78    ICMP    249     Time-to-live exceeded (Time to live exceeded in transit)
 	15      0.485000000     192.168.1.78    104.28.22.206   UDP     3       Source port: 45462  Destination port: 33442
 	16      0.595150000     75.154.223.211  192.168.1.78    ICMP    249     Time-to-live exceeded (Time to live exceeded in transit)
 	17      0.595348000     192.168.1.78    104.28.22.206   UDP     3       Source port: 45462  Destination port: 33443
 	18      0.727938000     75.154.223.209  192.168.1.78    ICMP    249     Time-to-live exceeded (Time to live exceeded in transit)
-	
+
 	19      0.728994000     192.168.1.78    104.28.22.206   UDP     4       Source port: 45462  Destination port: 33444
 	20      0.869751000     206.223.119.180 192.168.1.78    ICMP    249     Time-to-live exceeded (Time to live exceeded in transit)
 	21      0.870464000     192.168.1.78    104.28.22.206   UDP     4       Source port: 45462  Destination port: 33445
 	22      0.999830000     206.223.119.180 192.168.1.78    ICMP    249     Time-to-live exceeded (Time to live exceeded in transit)
 	23      0.999994000     192.168.1.78    104.28.22.206   UDP     4       Source port: 45462  Destination port: 33446
 	24      1.111686000     206.223.119.180 192.168.1.78    ICMP    249     Time-to-live exceeded (Time to live exceeded in transit)
-	
+
 	25      1.111879000     192.168.1.78    104.28.22.206   UDP     5       Source port: 45462  Destination port: 33447
 	26      1.225611000     104.28.22.206   192.168.1.78    ICMP    60      Destination unreachable (Port unreachable)
 	27      1.228582000     192.168.1.78    104.28.22.206   UDP     5       Source port: 45462  Destination port: 33448

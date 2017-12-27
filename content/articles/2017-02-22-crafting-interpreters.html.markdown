@@ -1,6 +1,6 @@
 ---
 title: Crafting Interpreters
-date: 2017-02-22 16:26 UTC
+date: "2017-02-22"
 link: http://www.craftinginterpreters.com
 ---
 

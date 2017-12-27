@@ -1,6 +1,6 @@
 ---
 title: Dan Boneh's Crypto Course
-date: 2015-03-01 16:44 UTC
+date: "2015-03-01"
 tags: course, cryptography
 ---
 

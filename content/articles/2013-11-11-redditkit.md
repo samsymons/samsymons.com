@@ -1,6 +1,6 @@
 ---
 title: RedditKit 1.0
-date: 2013-11-11 12:00 UTC
+date: "2013-11-11"
 tags: redditkit
 ---
 

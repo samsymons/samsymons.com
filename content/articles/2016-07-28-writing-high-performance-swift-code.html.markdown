@@ -1,6 +1,6 @@
 ---
 title: Writing High Performance Swift Code
-date: 2016-07-28 14:40 UTC
+date: "2016-07-28"
 link: https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst
 ---
 

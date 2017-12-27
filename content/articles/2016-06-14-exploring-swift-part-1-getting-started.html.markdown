@@ -1,6 +1,6 @@
 ---
 title: "Exploring Swift, Part 1: Getting Started"
-date: 2016-06-14 18:23 UTC
+date: "2016-06-14"
 tags: swift
 ---
 

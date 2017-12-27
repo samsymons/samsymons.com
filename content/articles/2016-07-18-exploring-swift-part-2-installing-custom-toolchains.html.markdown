@@ -1,6 +1,6 @@
 ---
 title: "Exploring Swift, Part 2: Installing Custom Toolchains"
-date: 2016-07-18 15:36 UTC
+date: "2016-07-18"
 tags: swift
 ---
 

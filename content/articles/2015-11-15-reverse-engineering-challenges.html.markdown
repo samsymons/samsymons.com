@@ -1,6 +1,6 @@
 ---
 title: Reverse Engineering Challenges
-date: 2015-11-15 23:01 UTC
+date: "2015-11-15"
 link: http://challenges.re
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Notes for Coursera Machine Learning, Week 1
-date: 2016-08-16 01:48 UTC
+date: "2016-08-16"
 tags: machine learning
 ---
 
@@ -20,14 +20,14 @@ If you’re more familiar with programming than linear algebra, think of a vecto
 
 Here’s an example:
 
-\\(\begin{bmatrix} 1 & 2 & 3 \end{bmatrix}\\) ← *vector* 
+\\(\begin{bmatrix} 1 & 2 & 3 \end{bmatrix}\\) ← *vector*
 
 \\(
 \begin{bmatrix} 1 & 2 & 3
 \\cr
 4 & 5 & 6
 \end{bmatrix}
-\\) ← *matrix* 
+\\) ← *matrix*
 
 Matrices are measured by their number of rows and columns. The matrix above would be a \\(2 \times 3\\) matrix. Likewise, a vector is just a \\(1 \times n\\) matrix (or \\(n \times 1\\) depending on whether you want a row or column vector).
 
@@ -58,7 +58,7 @@ $$
 \times
 \begin{bmatrix} 1 \\cr 5 \end{bmatrix}
 = Something
-$$ 
+$$
 
 So we have our matrix and our vector. The matrix is \\(3 \times 2\\), and the vector is \\(2 \times 1\\). Notice: the matrix’s column count matches up with the vector’s row count. Let’s work through this multiplication and you’ll see why the element totals matter.
 
@@ -207,6 +207,3 @@ One other thing to think about is what the derivative is when you’re already a
 - The hypothesis function takes an input value and returns its best guess for the output. For house prices, it would take the size of a house and give us a price estimate.
 - The cost function calculates the difference between the hypothesis and actual values and sums them. The higher than value, the worse our hypothesis is.
 - Linear regression is all about figuring out the line of best fit for our data, so that we can make future predictions.
-
-
-

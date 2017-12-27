@@ -1,6 +1,6 @@
 ---
 title: Introduction to find
-date: 2015-02-17 12:00 UTC
+date: "2015-02-17"
 tags: unix, tutorial
 ---
 

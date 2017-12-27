@@ -1,6 +1,6 @@
 ---
 title: Matasano/Square CTF
-date: 2014-01-19 12:00 UTC
+date: "2014-01-19"
 tags: ctf, security
 link: https://microcorruption.com
 ---

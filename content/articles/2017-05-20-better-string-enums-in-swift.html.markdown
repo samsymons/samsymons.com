@@ -1,6 +1,6 @@
 ---
 title: "Better String Enums in Swift"
-date: 2017-05-20 04:40 UTC
+date: "2017-05-20"
 tags: swift, objective-c
 ---
 
@@ -44,10 +44,10 @@ Swift imports the `NS_STRING_ENUM` constants as a struct with static properties 
 ```
 struct AnimationDirection: RawRepresentable {
     typealias RawValue = String
-    
+
     init(rawValue: RawValue)
     var rawValue: RawValue { get }
-    
+
     static var up: AnimationDirection { get }
     static var down: AnimationDirection { get }
     static var left: AnimationDirection { get }

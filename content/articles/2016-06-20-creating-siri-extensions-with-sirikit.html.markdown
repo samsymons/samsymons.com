@@ -1,6 +1,6 @@
 ---
 title: Creating Siri Extensions With SiriKit
-date: 2016-06-20 23:18 UTC
+date: "2016-06-20"
 tags: swift, sirikit
 ---
 
@@ -32,7 +32,7 @@ Here’s my declaration of `PaymentsContact`:
 public class PaymentsContact {
   public let name: String
   public let emailAddress: String
-  
+
   public init(name: String, emailAddress: String) {
     self.name = name
     self.emailAddress = emailAddress
@@ -51,7 +51,7 @@ Siri interacts with apps through the `Intents` and `Intents UI` extensions. At t
 `Intents` is a fairly simple framework. It consists of three main pieces:
 
 1. An Info.plist file, telling Siri where to find your extension handler
-2. A subclass of `INExtension`, which verifies that the app is capable of handling a given extension 
+2. A subclass of `INExtension`, which verifies that the app is capable of handling a given extension
 3. The payments intent handler itself, which takes data from Siri, performs actions with that data, and then tells Siri the results
 
 Head back to the `Targets` list and click the add button again. In here, you should be able to find `Intents Extension` in the application extensions section. Add this, giving it a good name (`PaymentsIntentExtension` for me), though be sure to uncheck the checkbox asking to create a UI extension alongside this one. Those aren’t worth worrying about for now.
@@ -90,7 +90,7 @@ class IntentHandler: INExtension {
     if intent is INSendPaymentIntent {
       return SendPaymentIntentHandler()
     }
-    
+
     return nil
   }
 }
@@ -103,11 +103,11 @@ import Intents
 
 class SendPaymentIntentHandler: NSObject, INSendPaymentIntentHandling {
   // MARK: - INSendPaymentIntentHandling
-  
+
   func handle(sendPayment intent: INSendPaymentIntent, completion: (INSendPaymentIntentResponse) -> Swift.Void) {
     if let _ = intent.payee, let _ = intent.currencyAmount {
       // Handle the payment here!
-      
+
       completion(INSendPaymentIntentResponse.init(code: .success, userActivity: nil))
     }
     else {
@@ -126,7 +126,7 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     INPreferences.requestSiriAuthorization() { (status) in
       print("New status: \(status)")
     }
@@ -163,7 +163,7 @@ We’ll also need a way to get an `INPerson` object from our contacts. This can 
 ```
 public func inPerson() -> INPerson {
   let nameFormatter = PersonNameComponentsFormatter()
-    
+
   if let nameComponents = nameFormatter.personNameComponents(from: name) {
     return INPerson(handle: emailAddress, nameComponents: nameComponents, contactIdentifier: nil)
   }
@@ -183,21 +183,21 @@ func resolvePayee(forSendPayment intent: INSendPaymentIntent, with completion: (
       let contacts = PaymentsContact.allContacts()
       var resolutionResult: INPersonResolutionResult?
       var matchedContacts: [PaymentsContact] = []
-      
+
       for contact in contacts {
         print("Checking '\(contact.name)' against '\(payee.displayName)'")
-        
+
         if contact.name == payee.displayName {
           matchedContacts.append(contact)
         }
       }
-      
+
       switch matchedContacts.count {
       case 2 ... Int.max:
         let disambiguationOptions: [INPerson] = matchedContacts.map { contact in
           return contact.inPerson()
         }
-        
+
         resolutionResult = INPersonResolutionResult.disambiguation(with: disambiguationOptions)
       case 1:
         let recipientMatched = matchedContacts[0].inPerson()
@@ -209,7 +209,7 @@ func resolvePayee(forSendPayment intent: INSendPaymentIntent, with completion: (
       default:
         break
       }
-      
+
       completion(resolutionResult!)
     } else {
       completion(INPersonResolutionResult.needsValue())
@@ -231,7 +231,7 @@ Telling Siri to take the user to your app is pretty easy. You do this by providi
 let userActivity = NSUserActivity()
 completion(INSendPaymentIntentResponse.init(code: .success, userActivity: userActivity))
 ```
-        
+
 Then, in your App Delegate, you can handle the user activity like so:
 
 ```swift
@@ -239,7 +239,7 @@ func application(_ application: UIApplication, continue userActivity: NSUserActi
   if let interaction = userActivity.interaction, let intent = interaction.intent as? INSendPaymentIntent, let payee = intent.payee {
     print("Paying \(payee.displayName) \(intent.currencyAmount!.amount!)")
   }
-    
+
   return true
 }
 ```
@@ -260,7 +260,7 @@ func configure(with interaction: INInteraction!, context: INUIHostedViewContext,
       if let payee = sendIntent.payee {
         // Do something with payee.displayName
       }
-      
+
       completion(self.desiredSize)
     }
     else {
