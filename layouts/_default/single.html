@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article>
+  <div class="article-header">
+    {{ if .Params.link }}
+    <h1 class="article-title link"><a href="{{ .Params.link }}">{{ .Title }}</a> &rarr;</h1>
+    {{ else }}
+    <h1 class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    {{ end }}
+
+    <span class="metadata">
+      <time>Published {{ dateFormat "January 2, 2006" .Date }}</time>
+    </span>
+  </div>
+
+  {{ .Content }}
+
+  {{- if .Params.tags }}
+  <ul class="tags">
+  {{- range .Params.tags }}
+    <li class='tag'><a href='{{ "/" | relURL }}tags/{{ . | urlize }}/'>{{ . }}</a></li>
+  {{- end }}
+  </ul>
+  {{- end }}
+</article>
+{{ end }}
