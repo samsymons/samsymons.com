@@ -1,9 +1,8 @@
 ---
-
 title: Detecting Simulator Builds in Swift
 date: "2017-08-11"
 tags: [ "swift" ]
-
+slug: "detecting-simulator-builds-in-swift"
 ---
 
 When developing a Swift app, you will occasionally find yourself wanting to include a piece of code only if you're running in the simulator. Perhaps you want to run some alternative code paths (like not calling Metal APIs, which aren't available in the simulator), or avoid attempting to register for push notifications. There are a few ways in which to do this, and the techniques are different depending on whether you're writing Swift or Objective-C.

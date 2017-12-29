@@ -2,6 +2,7 @@
 title: Creating Siri Extensions With SiriKit
 date: "2016-06-20"
 tags: [ "swift", "sirikit" ]
+slug: "creating-siri-extensions-with-sirikit"
 ---
 
 With the introduction of iOS 10 at WWDC 2016, Siri has finally been opened up to developers, in the form of [SiriKit](https://developer.apple.com/sirikit/). It comes with support for a fixed set of app categories for now, ranging from messaging and phone calls to payments and booking rides.

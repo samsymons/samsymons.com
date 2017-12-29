@@ -2,6 +2,7 @@
 title: Notes for Coursera Machine Learning, Week 1
 date: "2016-08-16"
 tags: [ "machine learning" ]
+slug: "coursera-machine-learning-week-1"
 ---
 
 Some time ago, I started [Andrew Ng's Machine Learning course on Coursera](https://www.coursera.org/learn/machine-learning). I loved every bit of it, but I only got halfway through before I started a new job and it ended up falling by the wayside.

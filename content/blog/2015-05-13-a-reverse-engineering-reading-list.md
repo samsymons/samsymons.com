@@ -2,6 +2,7 @@
 title: A Reverse Engineering Reading List
 date: "2015-05-13"
 tags: [ "reverse engineering" ]
+slug: "a-reverse-engineering-reading-list"
 ---
 
 One of my hobbies is taking apart binaries and figuring out how they work. It is really satisfying to take a program and break it apart, before reassembling the pieces in a way that you understand. There are so many resources for picking up this stuff that it seemed like a crime to not collect it in one place.

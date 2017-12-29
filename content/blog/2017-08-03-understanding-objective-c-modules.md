@@ -1,9 +1,8 @@
 ---
-
 title: Understanding Objective-C Modules
 date: "2017-08-03"
 tags: [ "objective-c", "iOS" ]
-
+slug: "understanding-objective-c-modules"
 ---
 
 A few years back, the idea of Objective-C modules was introduced to LLVM. They were developed as a solution to the problems associated with the traditional `#include` and `#import` mechanisms.

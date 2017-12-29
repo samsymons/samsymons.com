@@ -2,6 +2,7 @@
 title: BetterCap
 date: "2015-07-22"
 link: https://github.com/evilsocket/bettercap
+slug: "bettercap"
 ---
 
 Whenever I play with MITM attacks against my devices on the local network, it always feels like I’m just putting together pieces of Lego until I find a combination of software that does what I want.

@@ -2,6 +2,7 @@
 title: Conference Videos for Objective-C Developers
 date: "2013-12-14"
 tags: [ "conference", "objective-c" ]
+slug: "conference-videos-for-objective-c-developers"
 ---
 
 Over the last few years, the number of conferences for Objective-C developers has grown like crazy. They are a fantastic way to learn, giving you the opportunity to hear about some topics you may never have encountered before from people who know them inside and out.

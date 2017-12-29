@@ -2,6 +2,7 @@
 title: RedditKit 1.0
 date: "2013-11-11"
 tags: [ "redditkit" ]
+slug: "redditkit"
 ---
 
 reddit has always had a massive nerd audience. [/r/programming][1] has a subscriber base of nearly half a million, and there are countless other subreddits dedicated to the art of software development.

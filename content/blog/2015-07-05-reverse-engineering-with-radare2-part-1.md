@@ -2,6 +2,7 @@
 title: Reverse Engineering With Radare2, Part 1
 date: "2015-07-05"
 tags: [ "radare", "reverse engineering" ]
+slug: "reverse-engineering-with-radare2-part-1"
 ---
 
 A couple of weeks back, the folks at RPISEC [posted the lecture slides and lab contents][1] of their [Modern Binary Exploitation course][2], held earlier this year. The course is designed to take somebody with basic C skills and have them work their way through a series of reverse engineering challenges of increasing difficulty.

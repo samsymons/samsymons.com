@@ -2,6 +2,7 @@
 title: "Exploring Swift, Part 2: Installing Custom Toolchains"
 date: "2016-07-18"
 tags: [ "swift" ]
+slug: "exploring-swift-part-2-installing-custom-toolchains"
 ---
 
 As you’re making changes to Swift, you’ll want to test them out by using your new version of the compiler and writing some programs with it. The most convention way to do this is to provide the system with a _new_ version of Swift to use.

@@ -2,6 +2,7 @@
 title: Rendering Math with KaTeX
 date: "2016-08-06"
 tags: [ "math" ]
+slug: "rendering-math-with-katex"
 ---
 
 The other day, I was looking into how easy it is to render LaTeX via a Markdown document. [MathML](https://www.w3.org/Math/) isn't yet widespread enough to use reliably, so instead I started looking at some of the third-party libraries available. I had looked at [KaTeX from Khan Academy](https://github.com/Khan/KaTeX) a few times in the past, and was happy to find that it was exactly what I wanted.

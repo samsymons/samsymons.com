@@ -3,6 +3,7 @@ title: Matasano/Square CTF
 date: "2014-01-19"
 tags: [ "ctf", "security" ]
 link: https://microcorruption.com
+slug: "matasano-square-ctf"
 ---
 
 A fantastic new Capture The Flag contest from the security guys at Matasano, in conjunction with Square. This is a great playground for exploit development, and the tutorial is a lot of fun.

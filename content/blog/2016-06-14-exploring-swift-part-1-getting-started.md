@@ -2,6 +2,7 @@
 title: "Exploring Swift, Part 1: Getting Started"
 date: "2016-06-14"
 tags: [ "swift" ]
+slug: "exploring-swift-part-1-getting-started"
 ---
 
 With the [open source release of Swift in December last year](https://developer.apple.com/swift/blog/?id=34), developers everywhere have been able to delve into the code behind the language and help improve it for everybody else. They’ve been able to help track down bugs in the current releases, and also help plan out future iterations.

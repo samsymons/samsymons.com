@@ -2,6 +2,7 @@
 title: "Better String Enums in Swift"
 date: "2017-05-20"
 tags: [ "swift", "objective-c" ]
+slug: "better-string-enums-in-swift"
 ---
 
 Swift has a number of great features for improving the way it imports Objective-C code. With `NS_SWIFT_NAME` you can customize the name of functions imported into Swift, and nullability annotations let you work closer with Swift's optional system. These features are very useful and pretty well known, but one feature I don't see talked about as often is `NS_STRING_ENUM`.

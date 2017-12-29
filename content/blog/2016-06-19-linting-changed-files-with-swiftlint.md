@@ -2,6 +2,7 @@
 title: Linting Changed Files With SwiftLint
 date: "2016-06-19"
 tags: [ "swift" ]
+slug: "linting-changed-files-with-swiftlint"
 ---
 
 [SwiftLint](https://github.com/realm/SwiftLint) is an incredible tool for identifying style issues with Swift codebases, and highlighting them right in Xcode. It’s great for saving time during code reviews, letting reviewers to worry about _important_ issues.
