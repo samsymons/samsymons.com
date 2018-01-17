@@ -24,10 +24,7 @@ gulp.task("images", function () {
   del(["static/images/**/*"])
 
   gulp.src("assets/images/**/*")
-      .pipe(hash())
       .pipe(gulp.dest("static/images"))
-      .pipe(hash.manifest("hash.json"))
-      .pipe(gulp.dest("data/images"))
 })
 
 // Process JavaScript

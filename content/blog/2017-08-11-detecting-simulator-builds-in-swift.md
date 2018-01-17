@@ -29,11 +29,11 @@ Sometimes, you will see `TARGET_IPHONE_SIMULATOR` used instead, which is incorre
 
 ### The Swift Approach
 
-In Swift, this is a little more complicated, as you can't use the `TARGET_OS_SIMULATOR` macro. In fact, per [Apple's documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/InteractingWithCAPIs.html#//apple_ref/doc/uid/TP40014216-CH8-ID31) you can't use C preprocessor macros at all:
+In Swift, this is a little more complicated, as you can't use the `TARGET_OS_SIMULATOR` macro. In fact, per [Apple's documentation][documentation] you can't use C preprocessor macros at all:
 
 >The Swift compiler does not include a preprocessor. Instead, it takes advantage of compile-time attributes, conditional compilation blocks, and language features to accomplish the same functionality. For this reason, preprocessor directives are not imported in Swift.
 
-This is [backed up by Greg Parker](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160125/007960.html):
+This is [backed up by Greg Parker][parker]:
 
 > Swift's #if doesn't recognize C macros. `#if TARGET_OS_SIMULATOR` will never be true.
 
@@ -45,8 +45,10 @@ With the custom `SIMULATOR` flag defined, you can check for it in Swift using `#
 
 ```swift
 #if SIMULATOR
-	print("Running in the simulator")
+  print("Running in the simulator")
 #endif
 ```
 
-[custom-flags]: images/custom-simulator-flags.png
+[documentation]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/InteractingWithCAPIs.html#//apple_ref/doc/uid/TP40014216-CH8-ID31
+[parker]: https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160125/007960.html
+[custom-flags]: /images/custom-simulator-flags.png

@@ -48,7 +48,7 @@ You’ll likely want to edit the source code with Xcode; you can build an Xcode 
 
 It won’t surprise you that there is a _lot_ of stuff in here, so using the fuzzy finder (Command+Shift+O) to find the classes you want is the way to go.
 
-![Swift running in Xcode](https://s3.amazonaws.com/samsymons/images/swift-in-xcode.png)
+![Swift running in Xcode](/images/swift-in-xcode.png)
 
 ### Breaking the Tests
 
