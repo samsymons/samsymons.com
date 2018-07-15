@@ -3,7 +3,6 @@
 /.sass-cache
 
 node_modules/
-data/**/hash.*
 public/
 
 *.plist
