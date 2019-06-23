@@ -107,7 +107,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px dotted $border-color;
+  border-top: 1px dotted var(--border-color);
   margin: 1em 0;
   padding: 0;
 }
@@ -178,7 +178,7 @@ article:last-child {
   margin-top: 0;
   margin-bottom: 20px;
   padding-bottom: 7px;
-  border-bottom: 0.5px solid $border-color;
+  border-bottom: 0.5px solid var(--border-color);
 
   font-size: 30px;
 }
@@ -300,7 +300,7 @@ footer {
 }
 
 .footnotes {
-  border-top: 1px solid $border-color;
+  border-top: 1px solid var(--border-color);
 
   a {
     border: none;
