@@ -13,9 +13,3 @@ pygmentsCodeFences = true
   identifier = "archive"
   url = "/archive/"
   weight = 1
-
-[[menu.main]]
-  name = "Projects"
-  identifier = "projects"
-  url = "/projects/"
-  weight = 2
