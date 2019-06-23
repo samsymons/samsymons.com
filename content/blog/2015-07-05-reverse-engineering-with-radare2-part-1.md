@@ -15,7 +15,7 @@ I believe that reverse engineering is a fantastic skill for software developers 
 
 The first order of business: what _is_ Radare2? It's... a little complicated. At its core, it is an [open source][4] framework designed to help disassemble software.
 
-It comes with a set of utilities to help with common RE tasks, like base conversion and file info extraction. It also packs a powerful CLI, `r2`, for interactively disassembling<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> programs. If you're familiar with [IDA Pro][5] or [Hopper][6], then you have a good idea of what this CLI can do.
+It comes with a set of utilities to help with common RE tasks, like base conversion and file info extraction. It also packs a powerful CLI, `r2`, for interactively disassembling programs. If you're familiar with [IDA Pro][5] or [Hopper][6], then you have a good idea of what this CLI can do.
 
 Programs like IDA may be easier to get up and running with, but I'm a fan of Radare2 because it can be set up on remote servers easily, and often comes preinstalled on CTF sites like [Smash The Stack][7].
 
@@ -70,7 +70,7 @@ I cheated a little bit and added some newlines between a few function calls in t
 2. Strings are automatically read from the binary and added as comments
 3. Strings are prefixed with `str.`, whereas imports use `imp.`
 
-On lines 30 and 31 of the disassembly, you can see a call to `strcmp` with `g00dJ0B!` as one of the arguments<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>. There's a pretty good chance that this is the password.
+On lines 30 and 31 of the disassembly, you can see a call to `strcmp` with `g00dJ0B!` as one of the arguments. There's a pretty good chance that this is the password.
 
 	sam@remote:/challenges/lecture1$ ./crackme0x00a
 	Enter password: g00dJ0B!
@@ -130,18 +130,6 @@ Remember that set of utilities mentioned earlier? Radare2 comes with a program c
 Hopefully you're beginning to comprehend the raw power of Radare2. This article barely skims the surface – `r2` packs a near limitless number of handy features, including an excellent visual interface capable of changing between display modes.
 
 Although these challenges were pretty simple, this is a solid starting point. The next entries in this series will eventually work towards challenges which feature buffer overflows, encryption, ROP chaining, and more. Have fun!
-
-<div class="footnotes"><ol>
-    <li class="footnote" id="fn:1"><span>
-    Disassembling is the process of taking the raw bytes of a binary and translating them back into assembly language. There are even programs (known as decompilers) which convert assembly into pseudo-C. If you've ever read nested switch statements in assembly, you'll appreciate that.
-    <a href="#fnref:1" title="return to article"> ↩</a></span>
-    </li>
-
-    <li class="footnote" id="fn:2"><span>
-    In assembly, arguments are supplied to functions depending on the calling convention of the operating system, also known as the ABI (Application Binary Interface). These binaries use the cdecl calling convention, which is usually the default for C compilers.
-    <a href="#fnref:2" title="return to article"> ↩</a></span>
-    </li>
-</ol></div>
 
 [1]:	https://github.com/RPISEC/MBE
 [2]:	http://security.cs.rpi.edu/courses/binexp-spring2015/
