@@ -11,7 +11,7 @@ p, li {
   margin-top: 0px;
 
   font-family: $body-font;
-  font-size: 19px;
+  font-size: 1.3em;
   font-style: normal;
   font-weight: 400;
 
@@ -72,7 +72,7 @@ code {
 }
 
 article {
-  color: $text-color;
+  color: var(--text-color);
 
   h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
@@ -114,7 +114,7 @@ article {
   }
 
   .article-title a {
-    color: $text-color;
+    color: var(--text-color);
     border-bottom: none;
 
     line-height: 1.2em;
@@ -238,7 +238,7 @@ p {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
 
   border-bottom: 2px solid lighten($yellow, 20%);
 
@@ -262,7 +262,7 @@ blockquote {
 #main-header a {
   border-bottom: none;
   font-size: 15px;
-  color: black;
+  color: var(--text-color);
 
   &:hover {
     color: $yellow;
@@ -277,7 +277,7 @@ footer a {
   transition: color 0.15s ease-out;
 
   &:hover {
-    color: $text-color;
+    color: var(--text-color);
   }
 }
 

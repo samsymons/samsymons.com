@@ -38,4 +38,12 @@ function js() {
 
 const build = gulp.series(clean, gulp.parallel(css, images, js));
 exports.build = build;
-exports.default = build;
+
+exports.default = function () {
+  gulp.watch('assets/**/*', {
+    ignoreInitial: false
+  }, function (cb) {
+    build();
+    cb();
+  });
+};

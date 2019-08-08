@@ -1,17 +1,26 @@
 :root {
+  --color-scheme-background: white;
+  --text-color: #222;
   --border-color: rgb(216, 216, 216);
   --dark-border-color: rgb(179, 179, 179);
+  --code-color: rgb(250, 250, 250);
 }
 
-$code-color: rgb(250, 250, 250);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-scheme-background: rgb(36, 36, 36);
+    --text-color: white;
+    --border-color: rgb(216, 216, 216);
+    --dark-border-color: rgb(179, 179, 179);
+    --code-color: rgb(26, 26, 26);
+  }
+}
 
 $red: #e81f36;
 $yellow: #fec444;
 $selection: #FFDA92;
 
 $link-color: $yellow;
-$link-hover-color: #715dfb;
 
 $light-text-color: #9CA0A2;
-$text-color: #222;
 $tag-color: #b8bdc0;

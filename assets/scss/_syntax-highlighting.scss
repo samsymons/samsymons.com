@@ -12,7 +12,7 @@ code {
   box-sizing: border-box;
   border-radius: 4px;
 
-  background-color: $code-color;
+  background-color: var(--code-color);
   border-radius: 4px;
 
   padding: 2px 6px;
@@ -46,7 +46,7 @@ pre code {
 }
 
 /* Background */ .chroma {
-  background-color: $code-color;
+  background-color: var(--code-color);
   border-radius: 4px;
   border: 1px solid #eee;
 }
