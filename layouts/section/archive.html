@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 <ul class="year">
 {{ range (where .Site.Pages "Kind" "page").GroupByDate "2006" }}
 <li>
