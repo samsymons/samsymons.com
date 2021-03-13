@@ -4,7 +4,7 @@
 </div>
 
 <div id="articles">
-  {{ range first 5 .Data.Pages }}
+  {{ range first 5 .Site.RegularPages }}
   {{ if eq .Type "blog" }}
 
   <article class="article-preview">
