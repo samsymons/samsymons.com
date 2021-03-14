@@ -11,5 +11,5 @@ pygmentsCodeFences = true
 [[menu.main]]
   name = "Archive"
   identifier = "archive"
-  url = "/archive/"
+  url = "archive/"
   weight = 1
