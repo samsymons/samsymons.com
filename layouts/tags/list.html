@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<h1 id="category-title">{{ .Title }}</h1>
+<h1 id="category-title">{{ .Title | title }}</h1>
 
 <ul class="year">
 {{ range .Data.Pages.GroupByDate "2006" }}
